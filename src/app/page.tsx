@@ -15,6 +15,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { ChevronDown as ChevronDownIcon, ArrowRight as ArrowRightIcon } from "lucide-react"
+import Image from "next/image"
 
 const languages = [
   { name: "JavaScript", progress: 85 },
@@ -458,23 +459,30 @@ export default function Page() {
               <CardHeader className="pb-4">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 bg-card">
-                    <img 
-                      src="/npc-logo.jpg" 
-                      alt="NPC Logo" 
-                      className="w-full h-full object-contain p-1" 
-                    />
+                    <a 
+                      href="https://www.linkedin.com/company/number-plate-clinic/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="cursor-pointer transition-opacity hover:opacity-80"
+                    >
+                      <Image 
+                        src="/npc-logo.jpg" 
+                        alt="NPC Logo" 
+                        width={48}
+                        height={48}
+                        className="w-full h-full object-contain p-1" 
+                      />
+                    </a>
                   </div>
                   <div className="flex-grow">
-                    <CardTitle>
-                      <a 
-                        href="https://www.linkedin.com/company/number-plate-clinic/" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="hover:text-primary transition-colors"
-                      >
-                        NUMBER PLATE CLINIC
-                      </a>
-                    </CardTitle>
+                    <a 
+                      href="https://www.linkedin.com/company/number-plate-clinic/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="hover:text-primary transition-colors"
+                    >
+                      <CardTitle>NUMBER PLATE CLINIC</CardTitle>
+                    </a>
                     <CardDescription>
                       <span className="block text-muted-foreground">Part-time · 2 yrs</span>
                       <span className="block text-sm text-muted-foreground/60">Bolton, England, United Kingdom · Hybrid</span>
@@ -561,23 +569,30 @@ export default function Page() {
               <CardHeader className="pb-4">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 bg-card">
-                    <img 
-                      src="/adventa-logo.jpg" 
-                      alt="Adventa Logo" 
-                      className="w-full h-full object-contain p-1" 
-                    />
+                    <a 
+                      href="https://www.linkedin.com/company/adventa-technologies/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="cursor-pointer transition-opacity hover:opacity-80"
+                    >
+                      <Image 
+                        src="/adventa-logo.jpg" 
+                        alt="Adventa Logo" 
+                        width={48}
+                        height={48}
+                        className="w-full h-full object-contain p-1" 
+                      />
+                    </a>
                   </div>
                   <div className="flex-grow">
-                    <CardTitle>
-                      <a 
-                        href="https://www.linkedin.com/company/adventa-technologies/" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="hover:text-primary transition-colors"
-                      >
-                        Adventa Technologies Pvt Ltd
-                      </a>
-                    </CardTitle>
+                    <a 
+                      href="https://www.linkedin.com/company/adventa-technologies/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="hover:text-primary transition-colors"
+                    >
+                      <CardTitle>Adventa Technologies Pvt Ltd</CardTitle>
+                    </a>
                     <CardDescription>
                       <span className="block text-muted-foreground">Full-time · 1 yr 1 mo</span>
                       <span className="block text-sm text-muted-foreground/60">Colombo District, Western Province, Sri Lanka · Hybrid</span>
@@ -625,27 +640,83 @@ export default function Page() {
         {/* Education Section */}
         <section id="education" className="mb-24 animate-fade-in">
           <h2 className="text-3xl font-bold mb-12 text-center gradient-text">Education</h2>
-          <Card className="hover-lift">
-            <CardHeader>
-              <CardTitle>Associate's degree, Computer Science</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <h4 className="text-lg font-semibold mb-4 text-foreground">Relevant Coursework</h4>
-              <ul className="space-y-3 text-muted-foreground">
-                {[
-                  "Introduction to Programming",
-                  "Data Structures and Algorithms",
-                  "Object-Oriented Programming",
-                  "Web Development Fundamentals",
-                  "Database Management Systems"
-                ].map((course, i) => (
-                  <li key={course} className={`animate-fade-in delay-${(i + 1) * 100}`}>
-                    {course}
-                  </li>
-                ))}
-              </ul>
-            </CardContent>
-          </Card>
+          <div className="space-y-6">
+            {/* Associate's Degree */}
+            <Card className="hover-lift">
+              <CardHeader className="pb-4">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 bg-card">
+                    <a 
+                      href="https://www.linkedin.com/school/vtasrilanka" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="cursor-pointer transition-opacity hover:opacity-80"
+                    >
+                      <Image 
+                        src="/vta-logo.jpg" 
+                        alt="Vocational Training Authority Logo" 
+                        width={48}
+                        height={48}
+                        className="w-full h-full object-contain p-1" 
+                      />
+                    </a>
+                  </div>
+                  <div>
+                    <a 
+                      href="https://www.linkedin.com/school/vtasrilanka" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="hover:text-primary transition-colors"
+                    >
+                      <CardTitle>Associate's degree, Computer Science</CardTitle>
+                    </a>
+                    <CardDescription>
+                      <span className="block text-muted-foreground">Vocational Training Authority</span>
+                      <span className="block text-sm text-muted-foreground/60">Jan 2020 - Jan 2022</span>
+                    </CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+            </Card>
+
+            {/* Master's Degree */}
+            <Card className="hover-lift">
+              <CardHeader className="pb-4">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 bg-card">
+                    <a 
+                      href="https://www.uclan.ac.uk/postgraduate/courses/mba-master-of-business-administration" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="cursor-pointer transition-opacity hover:opacity-80"
+                    >
+                      <Image 
+                        src="/uclan-logo.jpg" 
+                        alt="University of Central Lancashire Logo" 
+                        width={48}
+                        height={48}
+                        className="w-full h-full object-contain p-1" 
+                      />
+                    </a>
+                  </div>
+                  <div>
+                    <a 
+                      href="https://www.uclan.ac.uk/postgraduate/courses/mba-master-of-business-administration" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="hover:text-primary transition-colors"
+                    >
+                      <CardTitle>Master's degree, Business Administration and Management</CardTitle>
+                    </a>
+                    <CardDescription>
+                      <span className="block text-muted-foreground">University of Central Lancashire</span>
+                      <span className="block text-sm text-muted-foreground/60">Jan 2023 - Jan 2024</span>
+                    </CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+            </Card>
+          </div>
         </section>
 
         {/* License & Certifications Section */}
