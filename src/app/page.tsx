@@ -323,17 +323,17 @@ export default function Page() {
                 </CardFooter>
               </Card>
 
-              {/* Task Manager */}
+              {/* yt-music-downloader */}
               <Card className="hover-lift flex flex-col">
                 <CardHeader>
-                  <CardTitle>Task Manager</CardTitle>
+                  <CardTitle>ytmusic Downloader</CardTitle>
                   <CardDescription>
-                    CLI task management application with priority scheduling
+                  Python script for downloading music from YTmusic using the yt-dlp library
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Efficient task organization with priority-based scheduling and deadline tracking
+                  A simple Python script to download audio from YouTube videos 
                   </p>
                 </CardContent>
                 <CardFooter className="mt-auto">
@@ -343,11 +343,11 @@ export default function Page() {
                     className="mt-4 text-foreground hover:text-success hover:border-success transition-colors"
                   >
                     <a
-                      href="#"
+                      href="https://github.com/fernand3z/yt-music-downloader"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Comming Soon <ArrowRightIcon className="ml-2 h-4 w-4" />
+                      View on GitHub <ArrowRightIcon className="ml-2 h-4 w-4" />
                     </a>
                   </Button>
                 </CardFooter>
