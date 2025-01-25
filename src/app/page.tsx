@@ -101,7 +101,7 @@ export default function Page() {
       <div className="max-w-4xl mx-auto px-4 py-12">
         {/* Hero Section */}
         <section id="about" className="mb-24 text-center">
-          <h1 className="text-4xl font-bold mb-4 gradient-text animate-fade-in">
+          <h1 className="text-5xl font-bold mb-4 gradient-text animate-fade-in">
             Amoda Fernando
           </h1>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in delay-200">
@@ -139,7 +139,7 @@ export default function Page() {
 
         {/* Skills Section */}
         <section id="skills" className="mb-24 animate-fade-in">
-          <h2 className="text-3xl font-bold mb-12 text-center gradient-text">Skills && Technologies</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Skills && Technologies</h2>
           <div className="card-spotify rounded-lg p-6">
             <div className="grid grid-cols-2 gap-8">
               <div className="animate-slide-in delay-100">
@@ -259,7 +259,7 @@ export default function Page() {
 
         {/* Projects Section */}
         <section id="projects" className="mb-24 animate-fade-in">
-          <h2 className="text-3xl font-bold mb-12 text-center gradient-text">Projects</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Projects</h2>
           <div className="space-y-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* First 6 cards (always visible) */}
@@ -432,7 +432,7 @@ export default function Page() {
 
         {/* Experience Section */}
         <section id="experience" className="mb-24 animate-fade-in">
-          <h2 className="text-3xl font-bold mb-12 text-center gradient-text">Work Experience</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Work Experience</h2>
           <div className="space-y-8">
             {/* NUMBER PLATE CLINIC Experience */}
             <Card className="hover-lift">
@@ -678,7 +678,7 @@ export default function Page() {
 
         {/* Education Section */}
         <section id="education" className="mb-24 animate-fade-in">
-          <h2 className="text-3xl font-bold mb-12 text-center gradient-text">Education</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Education</h2>
           <div className="space-y-6">
             {/* Associate's Degree */}
             <Card className="hover-lift">
@@ -842,7 +842,7 @@ export default function Page() {
 
         {/* License & Certifications Section */}
         <section id="certifications" className="animate-fade-in">
-          <h2 className="text-3xl font-bold mb-12 text-center gradient-text">License && Certifications</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">License && Certifications</h2>
           <div className="space-y-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* First 4 certificates are always visible */}
