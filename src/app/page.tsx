@@ -101,7 +101,7 @@ export default function Page() {
       <div className="max-w-4xl mx-auto px-4 py-12">
         {/* Hero Section */}
         <section id="about" className="mb-24 text-center">
-          <h1 className="text-5xl font-bold mb-4 gradient-text animate-fade-in">
+          <h1 className="text-[42px] font-bold mb-4 gradient-text animate-fade-in">
             Amoda Fernando
           </h1>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in delay-200">
