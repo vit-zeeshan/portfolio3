@@ -38,7 +38,29 @@ export function Navbar() {
     }
   }
 
-  if (!mounted) return null
+  if (!mounted) {
+    return (
+      <header className="sticky top-0 z-50 bg-background/30 dark:bg-background/50 backdrop-blur-xl border-b border-border/40">
+        <nav className="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
+          <div className="flex items-center">
+            <div className="hidden md:flex items-center space-x-6">
+              {sections.map((section) => (
+                <button
+                  key={section}
+                  className="px-3 py-2 text-sm capitalize rounded-md transition-colors text-muted-foreground"
+                >
+                  {section}
+                </button>
+              ))}
+            </div>
+          </div>
+          <div className="p-2 rounded-md text-muted-foreground">
+            <MoonIcon className="h-5 w-5" />
+          </div>
+        </nav>
+      </header>
+    )
+  }
 
   return (
     <header className="sticky top-0 z-50 bg-background/30 dark:bg-background/50 backdrop-blur-xl border-b border-border/40">
