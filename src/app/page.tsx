@@ -54,22 +54,66 @@ export default function Page() {
   const [visibleProjectCount, setVisibleProjectCount] = useState(6)
   const [visibleCertCount, setVisibleCertCount] = useState(8)
 
-  const additionalProjects = Array(6).fill({
-    title: "Coming Soon",
-    description: "Future project planned",
-    content: "Another exciting project in the pipeline. Stay tuned for updates!",
-    status: "In Planning"
-  });
+  const projects = [
+    {
+      title: "Update Script",
+      description: "A script for automating system updates and maintenance tasks",
+      content: "Streamlines the process of keeping your system up-to-date with automated checks and updates",
+      link: "https://github.com/fernand3z/update-script"
+    },
+    {
+      title: "Portfolio Website",
+      description: "Modern portfolio website built with Next.js and Tailwind CSS",
+      content: "A responsive and animated portfolio showcasing my projects and skills",
+      link: "https://github.com/fernand3z/portfolio"
+    },
+    {
+      title: "Personal Blog Site",
+      description: "A modern blog site built with Hugo static site generator",
+      content: "Fast and minimalist blog featuring custom themes, responsive design, and markdown support",
+      link: "https://github.com/fernand3z/my-blog-site"
+    },
+    {
+      title: "ytmusic Downloader",
+      description: "Python script for downloading music from YTmusic using the yt-dlp library",
+      content: "A simple Python script to download audio from YouTube videos",
+      link: "https://github.com/fernand3z/yt-music-downloader"
+    },
+    {
+      title: "Coming Soon",
+      description: "Future project planned",
+      content: "Another exciting project in the pipeline. Stay tuned for updates!",
+      status: "In Planning"
+    },
+    {
+      title: "Coming Soon",
+      description: "Future project planned",
+      content: "Another exciting project in the pipeline. Stay tuned for updates!",
+      status: "In Planning"
+    },
+    {
+      title: "Coming Soon",
+      description: "Future project planned",
+      content: "Another exciting project in the pipeline. Stay tuned for updates!",
+      status: "In Planning"
+    },
+    {
+      title: "Coming Soon",
+      description: "Future project planned",
+      content: "Another exciting project in the pipeline. Stay tuned for updates!",
+      status: "In Planning"
+    }
+  ];
 
   const handleShowMoreProjects = () => {
-    if (visibleProjectCount >= 6 + additionalProjects.length) {
-      setVisibleProjectCount(6) // Reset to initial count
+    if (visibleProjectCount >= projects.length) {
+      setVisibleProjectCount(6) // Reset to initial count of 6
     } else {
-      setVisibleProjectCount(prev => Math.min(prev + 3, 6 + additionalProjects.length))
+      setVisibleProjectCount(prev => Math.min(prev + 3, projects.length))
     }
   }
 
-  const showingAllProjects = visibleProjectCount >= 6 + additionalProjects.length
+  const showingAllProjects = visibleProjectCount >= projects.length
 
   const handleShowMoreCerts = () => {
     if (visibleCertCount >= 12) { // Total number of certificates
@@ -107,34 +151,45 @@ export default function Page() {
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in delay-200">
             Passionate developer with a knack for solving complex problems through code. Mostly self-taught and driven by an unyielding curiosity to explore and master new technologies.
           </p>
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button 
-                variant="default"
-                className="bg-success hover:bg-success/90 text-success-foreground animate-fade-in delay-300 hover-lift"
-              >
-                Contact Me!
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-48">
-              <DropdownMenuLabel>Get in touch</DropdownMenuLabel>
-              <DropdownMenuSeparator />
-              <DropdownMenuGroup>
-                <DropdownMenuItem onClick={() => handleContact('gmail')}>
-                  <Mail className="mr-2 h-4 w-4" />
-                  <span>Email</span>
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => handleContact('whatsapp')}>
-                  <MessageSquare className="mr-2 h-4 w-4" />
-                  <span>WhatsApp</span>
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => handleContact('linkedin')}>
-                  <Github className="mr-2 h-4 w-4" />
-                  <span>LinkedIn</span>
-                </DropdownMenuItem>
-              </DropdownMenuGroup>
-            </DropdownMenuContent>
-          </DropdownMenu>
+          <div className="flex items-center justify-center space-x-4">
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button 
+                  variant="default"
+                  className="bg-success hover:bg-success/90 text-success-foreground animate-fade-in delay-300 hover-lift"
+                >
+                  Contact Me!
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-48">
+                <DropdownMenuLabel>Get in touch</DropdownMenuLabel>
+                <DropdownMenuSeparator />
+                <DropdownMenuGroup>
+                  <DropdownMenuItem onClick={() => handleContact('gmail')}>
+                    <Mail className="mr-2 h-4 w-4" />
+                    <span>Email</span>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => handleContact('whatsapp')}>
+                    <MessageSquare className="mr-2 h-4 w-4" />
+                    <span>WhatsApp</span>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => handleContact('linkedin')}>
+                    <Github className="mr-2 h-4 w-4" />
+                    <span>LinkedIn</span>
+                  </DropdownMenuItem>
+                </DropdownMenuGroup>
+              </DropdownMenuContent>
+            </DropdownMenu>
+            <Button 
+              variant="default"
+              className="bg-success hover:bg-success/90 text-success-foreground animate-fade-in delay-300 hover-lift"
+              asChild
+            >
+              <a href="https://blog.yoursite.com" target="_blank" rel="noopener noreferrer">
+                Blog Site
+              </a>
+            </Button>
+          </div>
         </section>
 
         {/* Skills Section */}
@@ -262,122 +317,8 @@ export default function Page() {
           <h2 className="text-3xl font-bold mb-12 text-center">Projects</h2>
           <div className="space-y-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {/* First 6 cards (always visible) */}
-              {/* Update Script */}
-              <Card className="hover-lift flex flex-col">
-                <CardHeader>
-                  <CardTitle>Update Script</CardTitle>
-                  <CardDescription>
-                    A script for automating system updates and maintenance tasks
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    Streamlines the process of keeping your system up-to-date with automated checks and updates
-                  </p>
-                </CardContent>
-                <CardFooter className="mt-auto">
-                  <Button
-                    asChild
-                    variant="outline"
-                    className="mt-4 text-foreground hover:text-success hover:border-success transition-colors"
-                  >
-                    <a
-                      href="https://github.com/fernand3z/update-script"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      View on GitHub <ArrowRightIcon className="ml-2 h-4 w-4" />
-                    </a>
-                  </Button>
-                </CardFooter>
-              </Card>
-
-              {/* Portfolio Website */}
-              <Card className="hover-lift flex flex-col">
-                <CardHeader>
-                  <CardTitle>Portfolio Website</CardTitle>
-                  <CardDescription>
-                    Modern portfolio website built with Next.js and Tailwind CSS
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    A responsive and animated portfolio showcasing my projects and skills
-                  </p>
-                </CardContent>
-                <CardFooter className="mt-auto">
-                  <Button
-                    asChild
-                    variant="outline"
-                    className="mt-4 text-foreground hover:text-success hover:border-success transition-colors"
-                  >
-                    <a
-                      href="https://github.com/fernand3z/portfolio"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      View on GitHub <ArrowRightIcon className="ml-2 h-4 w-4" />
-                    </a>
-                  </Button>
-                </CardFooter>
-              </Card>
-
-              {/* yt-music-downloader */}
-              <Card className="hover-lift flex flex-col">
-                <CardHeader>
-                  <CardTitle>ytmusic Downloader</CardTitle>
-                  <CardDescription>
-                  Python script for downloading music from YTmusic using the yt-dlp library
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                  A simple Python script to download audio from YouTube videos 
-                  </p>
-                </CardContent>
-                <CardFooter className="mt-auto">
-                  <Button
-                    asChild
-                    variant="outline"
-                    className="mt-4 text-foreground hover:text-success hover:border-success transition-colors"
-                  >
-                    <a
-                      href="https://github.com/fernand3z/yt-music-downloader"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      View on GitHub <ArrowRightIcon className="ml-2 h-4 w-4" />
-                    </a>
-                  </Button>
-                </CardFooter>
-              </Card>
-
-              {/* First 3 "Coming Soon" cards (always visible) */}
-              {[1, 2, 3].map((_, index) => (
-                <Card key={`visible-${index}`} className="hover-lift opacity-75 flex flex-col">
-                  <CardHeader>
-                    <CardTitle>Coming Soon</CardTitle>
-                    <CardDescription>
-                      New project under development
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground">
-                      Exciting new project in the works. Stay tuned for updates!
-                    </p>
-                  </CardContent>
-                  <CardFooter className="mt-auto">
-                    <span className="text-muted-foreground inline-flex items-center space-x-1">
-                      Under Development →
-                    </span>
-                  </CardFooter>
-                </Card>
-              ))}
-
-              {/* Additional cards */}
-              {additionalProjects.slice(0, visibleProjectCount - 6).map((project, index) => (
-                <Card key={`hidden-${index}`} className="hover-lift opacity-75 flex flex-col animate-fade-in">
+              {projects.slice(0, visibleProjectCount).map((project, index) => (
+                <Card key={index} className={`hover-lift flex flex-col ${!project.link ? 'opacity-75' : ''}`}>
                   <CardHeader>
                     <CardTitle>{project.title}</CardTitle>
                     <CardDescription>
@@ -390,17 +331,33 @@ export default function Page() {
                     </p>
                   </CardContent>
                   <CardFooter className="mt-auto">
-                    <span className="text-muted-foreground inline-flex items-center space-x-1">
-                      {project.status} →
-                    </span>
+                    {project.link ? (
+                      <Button
+                        asChild
+                        variant="outline"
+                        className="mt-4 text-foreground hover:text-success hover:border-success transition-colors"
+                      >
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          View on GitHub <ArrowRightIcon className="ml-2 h-4 w-4" />
+                        </a>
+                      </Button>
+                    ) : (
+                      <span className="text-muted-foreground inline-flex items-center space-x-1">
+                        {project.status} →
+                      </span>
+                    )}
                   </CardFooter>
                 </Card>
               ))}
             </div>
 
-            {/* Show More Projects Button */}
-            {visibleProjectCount < 6 + additionalProjects.length && (
-              <div className="flex justify-center">
+            {/* Show More/Less Projects Button */}
+            {visibleProjectCount < projects.length ? (
+              <div className="flex justify-center mt-8">
                 <button
                   onClick={handleShowMoreProjects}
                   className="text-muted-foreground hover:text-foreground inline-flex items-center space-x-2 transition-colors group"
@@ -411,11 +368,8 @@ export default function Page() {
                   </div>
                 </button>
               </div>
-            )}
-
-            {/* Show Less Button - only visible when all projects are shown */}
-            {showingAllProjects && (
-              <div className="flex justify-center">
+            ) : (
+              <div className="flex justify-center mt-8">
                 <button
                   onClick={handleShowMoreProjects}
                   className="text-muted-foreground hover:text-foreground inline-flex items-center space-x-2 transition-colors group"
