@@ -185,8 +185,8 @@ export default function Page() {
               className="bg-success hover:bg-success/90 text-success-foreground animate-fade-in delay-300 hover-lift"
               asChild
             >
-              <a href="https://blog.yoursite.com" target="_blank" rel="noopener noreferrer">
-                Blog Site
+              <a href="https://blog.fernand3z.dev/" target="_blank" rel="noopener noreferrer">
+                My Blog Site
               </a>
             </Button>
           </div>
