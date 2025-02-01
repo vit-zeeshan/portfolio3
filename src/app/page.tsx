@@ -314,7 +314,7 @@ export default function Page() {
 
         {/* Projects Section */}
         <section id="projects" className="mb-24 animate-fade-in">
-          <h2 className="text-3xl font-bold mb-12 text-center">Projects</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Development Endeavors</h2>
           <div className="space-y-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {projects.slice(0, visibleProjectCount).map((project, index) => (
@@ -386,7 +386,7 @@ export default function Page() {
 
         {/* Experience Section */}
         <section id="experience" className="mb-24 animate-fade-in">
-          <h2 className="text-3xl font-bold mb-12 text-center">Work Experience</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Professional Background</h2>
           <div className="space-y-8">
             {/* NUMBER PLATE CLINIC Experience */}
             <Card className="hover-lift">
@@ -632,7 +632,7 @@ export default function Page() {
 
         {/* Education Section */}
         <section id="education" className="mb-24 animate-fade-in">
-          <h2 className="text-3xl font-bold mb-12 text-center">Education</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Knowledge Acquisition</h2>
           <div className="space-y-6">
             {/* Associate's Degree */}
             <Card className="hover-lift">
