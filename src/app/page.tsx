@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Mail, MessageSquare, Github } from "lucide-react"
+import { Mail, MessageSquare, Github, Download } from "lucide-react"
 import { Navbar } from "@/components/navbar"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
 import {
@@ -17,6 +17,7 @@ import {
 import { ChevronDown as ChevronDownIcon, ArrowRight as ArrowRightIcon } from "lucide-react"
 import Image from "next/image"
 import { Progress } from "@/components/ui/progress"
+import { GitHubLogoIcon } from "@radix-ui/react-icons"
 
 const languages = [
   { name: "JavaScript", progress: 85 },
@@ -80,10 +81,10 @@ export default function Page() {
       link: "https://github.com/fernand3z/yt-music-downloader"
     },
     {
-      title: "Coming Soon",
-      description: "Future project planned",
-      content: "Another exciting project in the pipeline. Stay tuned for updates!",
-      status: "In Planning"
+      title: "Devlogz Blog App",
+      description: "A WebView-based Android app for my personal blog",
+      content: "Android application that provides a native app experience for my blog site with offline capabilities and push notifications",
+      link: "https://github.com/fernand3z/my-webview-app"
     },
     {
       title: "Coming Soon",
@@ -180,6 +181,20 @@ export default function Page() {
                 </DropdownMenuGroup>
               </DropdownMenuContent>
             </DropdownMenu>
+            <Button
+              variant="default"
+              className="bg-success hover:bg-success/90 text-success-foreground animate-fade-in delay-300 hover-lift"
+              asChild
+            >
+              <a
+                href="https://github.com/fernand3z"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <GitHubLogoIcon className="h-5 w-5" />
+              </a>
+            </Button>
             <Button 
               variant="default"
               className="bg-success hover:bg-success/90 text-success-foreground animate-fade-in delay-300 hover-lift"
@@ -332,19 +347,36 @@ export default function Page() {
                   </CardContent>
                   <CardFooter className="mt-auto">
                     {project.link ? (
-                      <Button
-                        asChild
-                        variant="outline"
-                        className="mt-4 text-foreground hover:text-success hover:border-success transition-colors"
-                      >
-                        <a
-                          href={project.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                      <div className="flex flex-row w-full space-x-2">
+                        <Button
+                          asChild
+                          variant="outline"
+                          className="mt-4 text-foreground hover:text-success hover:border-success transition-colors"
                         >
-                          View on GitHub <ArrowRightIcon className="ml-2 h-4 w-4" />
-                        </a>
-                      </Button>
+                          <a
+                            href={project.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            View on GitHub <ArrowRightIcon className="ml-2 h-4 w-4" />
+                          </a>
+                        </Button>
+                        {project.title === "Devlogz Blog App" && (
+                          <Button
+                            asChild
+                            variant="outline"
+                            className="mt-4 text-foreground hover:text-success hover:border-success transition-colors"
+                          >
+                            <a
+                              href="https://github.com/fernand3z/my-webview-app/releases/download/v1.0.0/devlogzv1.0.0.apk"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <Download className="h-[18px] w-[18px]" />
+                            </a>
+                          </Button>
+                        )}
+                      </div>
                     ) : (
                       <span className="text-muted-foreground inline-flex items-center space-x-1">
                         {project.status} →
