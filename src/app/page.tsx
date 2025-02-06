@@ -536,7 +536,7 @@ export default function Page() {
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 bg-card">
                     <Image 
-                      src="/free-logo.ico" 
+                      src="/favicon.png" 
                       alt="Freelance Logo" 
                       width={48}
                       height={48}
