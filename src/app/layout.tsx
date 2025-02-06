@@ -10,7 +10,14 @@ export const metadata: Metadata = {
   title: "Amoda Fernando - Portfolio",
   description: "Personal portfolio showcasing my work and experience in software development",
   icons: {
-    icon: '/favicon.png'
+    icon: [
+      {
+        url: '/favicon.png',
+        type: 'image/png',
+      }
+    ],
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
   }
 }
 
