@@ -4,7 +4,10 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Footer } from "@/components/footer"
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ 
+  subsets: ["latin"],
+  display: 'swap'
+})
 
 export const metadata: Metadata = {
   title: "Amoda Fernando - Portfolio",
@@ -14,6 +17,7 @@ export const metadata: Metadata = {
       {
         url: '/favicon.png',
         type: 'image/png',
+        sizes: '32x32'
       }
     ],
     shortcut: '/favicon.png',
@@ -28,7 +32,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head />
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
