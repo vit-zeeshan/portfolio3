@@ -468,23 +468,8 @@ export default function Page() {
                   <h4 className="text-lg font-semibold text-foreground">System Administrator</h4>
                   <p className="text-sm text-muted-foreground/60 mb-4">Feb 2024 - Present · 1 yr</p>
                   <p className="text-muted-foreground mb-4">
-                    As a System Administrator at NUMBER PLATE CLINIC, I took on a more strategic and comprehensive role, directly managing and enhancing IT infrastructure to support organizational growth.
+                    Leading IT infrastructure management and optimization at NUMBER PLATE CLINIC, focusing on system reliability, security, and automation. Responsible for implementing AI-driven solutions, maintaining cybersecurity standards, and ensuring seamless operations across all IT systems.
                   </p>
-                  <div className="mb-4">
-                    <h5 className="text-foreground font-medium mb-2">Key Achievements:</h5>
-                    <ul className="space-y-3 text-muted-foreground list-disc pl-4">
-                      {[
-                        "Independently managed servers and networks, ensuring consistent uptime and robust security.",
-                        "Optimized workflows by implementing AI tools and advanced automation strategies, increasing efficiency.",
-                        "Enhanced cybersecurity measures and ensured compliance with industry regulations.",
-                        "Provided expert user support, enabling seamless daily operations and reducing system downtime."
-                      ].map((item, i) => (
-                        <li key={i} className={`animate-fade-in delay-${(i + 1) * 100}`}>
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <span>Skills:</span>
                     <span className="text-foreground">IT Service Management, Systems Management</span>
@@ -502,27 +487,9 @@ export default function Page() {
                   <h4 className="text-lg font-semibold text-foreground">Assistant System Administrator</h4>
                   <p className="text-sm text-muted-foreground/60 mb-4">Feb 2023 - 2024 · 1 yr</p>
                   <p className="text-muted-foreground mb-4">
-                    As an Assistant System Administrator at NUMBER PLATE CLINIC, I supported the IT infrastructure to ensure reliable and secure operations. I worked closely with the IT team to maintain systems and assist in implementing solutions that enhanced workflow efficiency.
+                    Supported core IT infrastructure operations and maintenance, with a focus on system reliability and security. Utilized automation tools and best practices to optimize workflows and maintain system integrity while assisting in implementing comprehensive IT solutions.
                   </p>
-                  <div className="mb-4">
-                    <h5 className="text-foreground font-medium mb-2">Key Responsibilities:</h5>
-                    <ul className="space-y-3 text-muted-foreground list-disc pl-4">
-                      {[
-                        "Assisted in managing servers and networks, ensuring system reliability and security.",
-                        "Supported infrastructure optimization for seamless business operations.",
-                        "Utilized automation tools like PowerShell to improve efficiency and reduce manual tasks.",
-                        "Contributed to strengthening cybersecurity measures and maintaining compliance with industry standards."
-                      ].map((item, i) => (
-                        <li key={i} className={`animate-fade-in delay-${(i + 1) * 100}`}>
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <p className="text-muted-foreground mt-4">
-                    This role allowed me to gain hands-on experience and build a solid foundation in IT systems management.
-                  </p>
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground mt-4">
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <span>Skills:</span>
                     <span className="text-foreground">Systems Management, Management</span>
                     <button 
@@ -563,24 +530,8 @@ export default function Page() {
                   <h4 className="text-lg font-semibold text-foreground">WordPress Developer</h4>
                   <p className="text-sm text-muted-foreground/60 mb-4">Jun 2022 - Nov 2022 · 6 mos</p>
                   <p className="text-muted-foreground mb-4">
-                    As a freelance WordPress developer, I specialized in creating custom e-commerce solutions and business websites, focusing on performance optimization and user experience.
+                    Specialized in developing custom WordPress solutions, including e-commerce websites and business platforms. Focused on creating high-performance, secure websites with optimized user experiences and comprehensive content management systems.
                   </p>
-                  <div className="mb-4">
-                    <h5 className="text-foreground font-medium mb-2">Key Achievements:</h5>
-                    <ul className="space-y-3 text-muted-foreground list-disc pl-4">
-                      {[
-                        "Developed and launched 2 full-scale e-commerce websites using WooCommerce, implementing custom payment gateways and shipping integrations.",
-                        "Created custom WordPress themes and plugins to meet specific client requirements and enhance website functionality.",
-                        "Optimized website performance achieving 90+ PageSpeed scores through caching, image optimization, and code minification.",
-                        "Implemented robust security measures including SSL, firewall configuration, and regular security audits.",
-                        "Provided comprehensive training to clients on WordPress CMS usage and content management."
-                      ].map((item, i) => (
-                        <li key={i} className={`animate-fade-in delay-${(i + 1) * 100}`}>
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <span>Skills:</span>
                     <span className="text-foreground">WordPress, WooCommerce, PHP</span>
@@ -632,26 +583,12 @@ export default function Page() {
                 </div>
               </CardHeader>
               <CardContent>
-                {/* Web Developer Role */}
                 <div className="mt-2">
                   <h4 className="text-lg font-semibold text-foreground">Web Developer</h4>
                   <p className="text-sm text-muted-foreground/60 mb-4">Apr 2021 - Apr 2022 · 1 yr 1 mo</p>
-                  <div className="mb-4">
-                    <h5 className="text-foreground font-medium mb-2">Key Achievements:</h5>
-                    <ul className="space-y-3 text-muted-foreground list-disc pl-4">
-                      {[
-                        "Developed and launched 7 custom web applications using Bubble.io, enabling rapid prototyping and deployment for startups and small businesses.",
-                        "Designed and prototyped user-friendly web interfaces using Figma, ensuring visually appealing and intuitive user experiences that align with client branding.",
-                        "Built and maintained dynamic WordPress websites, integrating custom themes and plugins to meet specific client needs and enhance functionality.",
-                        "Utilized HTML5, CSS3, PHP and JavaScript to create responsive and interactive websites, ensuring optimal performance and user engagement across various devices and browsers.",
-                        "Integrated third-party services and APIs, such as payment gateways, CRM tools, and social media platforms, to enhance website functionality and user interaction."
-                      ].map((item, i) => (
-                        <li key={i} className={`animate-fade-in delay-${(i + 1) * 100}`}>
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                  <p className="text-muted-foreground mb-4">
+                    Developed and maintained web applications using various technologies including Bubble.io, WordPress, and custom web development tools. Created user-friendly interfaces, integrated third-party services, and ensured optimal performance across all platforms.
+                  </p>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <span>Skills:</span>
                     <span className="text-foreground">Prototyping, HTML5</span>
