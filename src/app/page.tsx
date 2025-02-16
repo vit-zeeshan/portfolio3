@@ -57,6 +57,12 @@ export default function Page() {
 
   const projects = [
     {
+      title: "Dev Toolbox",
+      description: "A collection of development tools and utilities",
+      content: "A comprehensive collection of development tools and utilities to streamline the development workflow",
+      link: "https://github.com/fernand3z/dev-toolbox"
+    },
+    {
       title: "Update Script",
       description: "A script for automating system updates and maintenance tasks",
       content: "Streamlines the process of keeping your system up-to-date with automated checks and updates",
