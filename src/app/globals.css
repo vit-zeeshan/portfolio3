@@ -4,53 +4,53 @@
 
 @layer base {
   :root {
-    /* Light theme - Monochromatic with subtle green for links */
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 240 5% 96%;  /* Much lighter for progress bar background */
-    --secondary-foreground: 240 5.9% 10%;
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
+    /* Light theme using the three white colors */
+    --background: 0 0% 100%; /* White #FFFFFF */
+    --foreground: 0 0% 8%; /* Chinese Black for contrast */
+    --card: 0 0% 95%; /* Anti-Flash White #F3F3F3 */
+    --card-foreground: 0 0% 8%; /* Chinese Black for contrast */
+    --popover: 0 0% 88%; /* Chinese White #E1E1E1 */
+    --popover-foreground: 0 0% 8%; /* Chinese Black for contrast */
+    --primary: 0 0% 8%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 95%;  /* Anti-Flash White */
+    --secondary-foreground: 0 0% 8%;
+    --muted: 0 0% 88%; /* Chinese White */
+    --muted-foreground: 0 0% 11%;
+    --accent: 0 0% 95%; /* Anti-Flash White */
+    --accent-foreground: 0 0% 8%;
     --success: 142 76% 36%;
     --success-foreground: 355.7 100% 97.3%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
+    --border: 0 0% 88%; /* Chinese White */
+    --input: 0 0% 88%; /* Chinese White */
     --ring: 142 76% 36%;
     --radius: 0.5rem;
   }
 
   .dark {
-    /* Dark theme - Monochromatic with subtle green for links */
-    --background: 20 14.3% 4.1%;
-    --foreground: 0 0% 95%;
-    --card: 24 9.8% 10%;
-    --card-foreground: 0 0% 95%;
-    --popover: 0 0% 9%;
-    --popover-foreground: 0 0% 95%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
-    --secondary: 240 5% 26%;  /* Darker but still visible for progress bar background */
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 15%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 12 6.5% 15.1%;
-    --accent-foreground: 0 0% 98%;
-    --success: 142 70% 50%;  /* Brighter green in dark mode */
+    /* Dark theme using the three black colors */
+    --background: 0 0% 0%; /* Black #000000 */
+    --foreground: 0 0% 100%; /* White for contrast */
+    --card: 0 0% 8%; /* Chinese Black #141414 */
+    --card-foreground: 0 0% 100%; /* White for contrast */
+    --popover: 0 0% 11%; /* Eerie Black #1B1B1B */
+    --popover-foreground: 0 0% 100%; /* White for contrast */
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 8%;  /* Chinese Black */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 11%; /* Eerie Black */
+    --muted-foreground: 0 0% 88%;
+    --accent: 0 0% 8%; /* Chinese Black */
+    --accent-foreground: 0 0% 100%;
+    --success: 142 70% 50%;
     --success-foreground: 144.9 80.4% 10%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 85.7% 97.3%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
+    --border: 0 0% 11%; /* Eerie Black */
+    --input: 0 0% 11%; /* Eerie Black */
     --ring: 142 70% 50%;
   }
 }
