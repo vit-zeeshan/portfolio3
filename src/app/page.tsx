@@ -347,7 +347,7 @@ export default function Page() {
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground">
+                    <p className="text-muted-foreground text-[0.75em]">
                       {project.content}
                     </p>
                   </CardContent>
@@ -467,7 +467,7 @@ export default function Page() {
                 <div className="mt-2">
                   <h4 className="text-lg font-semibold text-foreground">System Administrator</h4>
                   <p className="text-sm text-muted-foreground/60 mb-4">Feb 2024 - Present · 1 yr</p>
-                  <p className="text-muted-foreground mb-4">
+                  <p className="text-muted-foreground mb-4 text-[0.75em]">
                     Leading IT infrastructure management and optimization at NUMBER PLATE CLINIC, focusing on system reliability, security, and automation. Responsible for implementing AI-driven solutions, maintaining cybersecurity standards, and ensuring seamless operations across all IT systems.
                   </p>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -486,7 +486,7 @@ export default function Page() {
                 <div className="mt-8 border-t border-border pt-6">
                   <h4 className="text-lg font-semibold text-foreground">Assistant System Administrator</h4>
                   <p className="text-sm text-muted-foreground/60 mb-4">Feb 2023 - 2024 · 1 yr</p>
-                  <p className="text-muted-foreground mb-4">
+                  <p className="text-muted-foreground mb-4 text-[0.75em]">
                     Supported core IT infrastructure operations and maintenance, with a focus on system reliability and security. Utilized automation tools and best practices to optimize workflows and maintain system integrity while assisting in implementing comprehensive IT solutions.
                   </p>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -529,7 +529,7 @@ export default function Page() {
                 <div className="mt-2">
                   <h4 className="text-lg font-semibold text-foreground">WordPress Developer</h4>
                   <p className="text-sm text-muted-foreground/60 mb-4">Jun 2022 - Nov 2022 · 6 mos</p>
-                  <p className="text-muted-foreground mb-4">
+                  <p className="text-muted-foreground mb-4 text-[0.75em]">
                     Specialized in developing custom WordPress solutions, including e-commerce websites and business platforms. Focused on creating high-performance, secure websites with optimized user experiences and comprehensive content management systems.
                   </p>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -586,7 +586,7 @@ export default function Page() {
                 <div className="mt-2">
                   <h4 className="text-lg font-semibold text-foreground">Web Developer</h4>
                   <p className="text-sm text-muted-foreground/60 mb-4">Apr 2021 - Apr 2022 · 1 yr 1 mo</p>
-                  <p className="text-muted-foreground mb-4">
+                  <p className="text-muted-foreground mb-4 text-[0.75em]">
                     Developed and maintained web applications using various technologies including Bubble.io, WordPress, and custom web development tools. Created user-friendly interfaces, integrated third-party services, and ensured optimal performance across all platforms.
                   </p>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
