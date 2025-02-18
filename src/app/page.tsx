@@ -1002,14 +1002,16 @@ export default function Page() {
                           href={provider.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="w-6 h-6 opacity-70 hover:opacity-100 transition-opacity"
+                          className="w-6 h-6 opacity-70 hover:opacity-100 transition-opacity flex items-center justify-center"
                         >
                           <Image
                             src={provider.icon}
                             alt={`${provider.name} logo`}
-                            width={16}
-                            height={16}
-                            className="w-full h-full object-contain"
+                            width={24}
+                            height={24}
+                            className="w-6 h-6 object-contain"
+                            quality={100}
+                            unoptimized
                           />
                         </a>
                       ))}
