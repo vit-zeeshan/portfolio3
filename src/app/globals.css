@@ -33,23 +33,23 @@
     /* Dark theme using the three black colors */
     --background: 0 0% 0%; /* Black #000000 */
     --foreground: 0 0% 100%; /* White for contrast */
-    --card: 0 0% 13%; /* Even lighter dark theme cards - #212121 */
+    --card: 0 0% 8%; /* Chinese Black #141414 */
     --card-foreground: 0 0% 100%; /* White for contrast */
     --popover: 0 0% 11%; /* Eerie Black #1B1B1B */
     --popover-foreground: 0 0% 100%; /* White for contrast */
     --primary: 0 0% 100%;
     --primary-foreground: 0 0% 0%;
-    --secondary: 0 0% 13%;  /* Matching new card color */
+    --secondary: 0 0% 8%;  /* Matching card color */
     --secondary-foreground: 0 0% 100%;
     --muted: 0 0% 11%; /* Eerie Black */
     --muted-foreground: 0 0% 88%;
-    --accent: 0 0% 13%; /* Matching new card color */
+    --accent: 0 0% 8%; /* Matching card color */
     --accent-foreground: 0 0% 100%;
     --success: 142 70% 50%;
     --success-foreground: 144.9 80.4% 10%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 85.7% 97.3%;
-    --border: 0 0% 15%; /* Lighter border for dark theme */
+    --border: 0 0% 11%; /* Eerie Black */
     --input: 0 0% 11%; /* Eerie Black */
     --ring: 142 70% 50%;
   }
