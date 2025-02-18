@@ -216,7 +216,7 @@ export default function Page() {
         {/* Skills Section */}
         <section id="skills" className="mb-24 animate-fade-in">
           <h2 className="text-3xl font-bold mb-12 text-center">Skills && Technologies</h2>
-          <div className="card-spotify rounded-lg p-6">
+          <div className="card-spotify rounded-lg p-4">
             <div className="grid grid-cols-2 gap-8">
               <div className="animate-slide-in delay-100">
                 <h3 className="text-xl font-semibold mb-4 text-foreground">Languages</h3>
