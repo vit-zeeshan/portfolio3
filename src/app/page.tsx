@@ -890,10 +890,10 @@ export default function Page() {
                 <div key={index} className={`card-spotify p-8 rounded-lg hover-lift animate-scale-in delay-${(index % 4 + 1) * 100} flex flex-col`}>
                   <div>
                     <h3 className="text-xl font-bold mb-3 text-foreground">{cert.title}</h3>
-                    <p className="text-muted-foreground mb-2">{cert.type}</p>
-                    <div className="flex justify-between items-center">
-                      <p className="text-sm text-muted-foreground">{cert.issuer}</p>
-                      <p className="text-sm text-muted-foreground">{cert.date}</p>
+                    <div className="flex items-center gap-2 mb-2">
+                      <p className="text-muted-foreground text-[0.6em]">{cert.type}</p>
+                      <span className="text-muted-foreground text-[0.6em]">•</span>
+                      <p className="text-muted-foreground text-[0.6em]">{cert.date}</p>
                     </div>
                   </div>
                   <div className="mt-auto pt-4 flex justify-between items-center">
