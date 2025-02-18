@@ -163,7 +163,7 @@ export default function Page() {
               <DropdownMenuTrigger asChild>
                 <Button 
                   variant="default"
-                  className="bg-success hover:bg-success/90 text-success-foreground animate-fade-in delay-300 hover-lift"
+                  className="bg-success hover:bg-success/90 text-success-foreground animate-fade-in delay-300 hover-lift focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0"
                 >
                   Contact Me!
                 </Button>
