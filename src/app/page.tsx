@@ -217,118 +217,156 @@ export default function Page() {
         <section id="skills" className="mb-24 animate-fade-in">
           <h2 className="text-3xl font-bold mb-12 text-center">Skills && Technologies</h2>
           <div className="card-spotify rounded-lg p-4">
-            <div className="grid grid-cols-2 gap-8">
+            <div className="grid grid-cols-3 lg:grid-cols-6 gap-4 md:gap-8">
+              {/* Column 1 */}
               <div className="animate-slide-in delay-100">
-                <h3 className="text-xl font-semibold mb-4 text-foreground">Languages</h3>
-                <div className="space-y-4">
-                  {/* Initial visible languages */}
+                <div className="space-y-2 md:space-y-4">
                   {[
-                    { name: "JavaScript", progress: 85 },
-                    { name: "Python", progress: 78 },
-                    { name: "HTML", progress: 92 },
-                    { name: "CSS", progress: 88 },
-                    { name: "SQL", progress: 75 },
-                    { name: "PHP", progress: 70 }
-                  ].slice(0, showMoreSkills ? languages.length : 6).map((lang, index) => (
-                    <div key={index} className="flex items-center gap-4">
-                      <span className="text-sm font-medium text-foreground min-w-[100px]">{lang.name}</span>
-                      <div className="flex-1 hidden md:block md:w-[75%]">
-                        <Progress value={lang.progress} className="h-2" />
-                      </div>
-                    </div>
-                  ))}
-                  
-                  {/* Additional languages (hidden by default) */}
-                  {showMoreSkills && [
-                    { name: "TypeScript", progress: 82 },
-                    { name: "PowerShell", progress: 65 },
-                    { name: "Bash", progress: 70 },
-                    { name: "C", progress: 35 },
-                    { name: "Java", progress: 30 },
-                    { name: "Go", progress: 8 },
-                    { name: "GraphQL", progress: 15 },
-                    { name: "Rust", progress: 5 },
-                   // { name: "Solidity", progress: 30 },
-                    { name: "Shell Scripting", progress: 75 }
-                  ].map((lang, i) => (
-                    <div key={lang.name} className="flex items-center gap-4">
-                      <span className="text-sm font-medium text-foreground min-w-[100px]">{lang.name}</span>
-                      <div className="flex-1 hidden md:block md:w-[75%]">
-                        <Progress value={lang.progress} className="h-2" />
-                      </div>
+                    { name: "JavaScript", icon: "/icons/javascript-svgrepo-com.svg" },
+                    { name: "TypeScript", icon: "/icons/typescript-svgrepo-com.svg" },
+                    { name: "Python", icon: "/icons/python-svgrepo-com.svg" },
+                    { name: "Java", icon: "/icons/java-svgrepo-com.svg" },
+                    { name: "C", icon: "/icons/c.svg" },
+                    { name: "Go", icon: "/icons/go-svgrepo-com.svg" }
+                  ].map((tech: { name: string; icon: string }, index: number) => (
+                    <div key={index} className="flex items-center gap-2">
+                      <Image
+                        src={tech.icon}
+                        alt={`${tech.name} icon`}
+                        width={24}
+                        height={24}
+                        className="w-5 h-5 md:w-6 md:h-6"
+                      />
+                      <span className="text-xs md:text-sm font-medium text-foreground">{tech.name}</span>
                     </div>
                   ))}
                 </div>
               </div>
+
+              {/* Column 2 */}
               <div className="animate-slide-in delay-200">
-                <h3 className="text-xl font-semibold mb-4 text-foreground">Tools & Technologies</h3>
-                <div className="space-y-4">
-                  {/* Initial visible tools */}
+                <div className="space-y-2 md:space-y-4">
                   {[
-                    { name: "Git", progress: 88 },
-                    { name: "Docker", progress: 82 },
-                    { name: "Linux", progress: 90 },
-                    { name: "VS Code", progress: 95 },
-                    { name: "Node.js", progress: 80 },
-                    { name: "WordPress", progress: 85 },
-                    
-                  ].slice(0, showMoreSkills ? tools.length : 6).map((tool, index) => (
-                    <div key={index} className="flex items-center gap-4">
-                      <span className="text-sm font-medium text-foreground min-w-[100px]">{tool.name}</span>
-                      <div className="flex-1 hidden md:block md:w-[75%]">
-                        <Progress value={tool.progress} className="h-2" />
-                      </div>
-                    </div>
-                  ))}
-                  
-                  {/* Additional tools (hidden by default) */}
-                  {showMoreSkills && [
-                    { name: "AWS", progress: 75 },
-                    { name: "React", progress: 85 },
-                    { name: "Next.js", progress: 80 },
-                    { name: "MongoDB", progress: 70 },
-                    { name: "Nginx", progress: 65 },
-                    { name: "Azure", progress: 50 },
-                    { name: "PostgreSQL", progress: 75 },
-                    { name: "Figma", progress: 80 },
-                    { name: "Kubernetes", progress: 5 },
-                   // { name: "Jenkins", progress: 55 },
-                   // { name: "Terraform", progress: 45 },
-                   // { name: "Redis", progress: 65 },
-                    { name: "GitHub Actions", progress: 50 },
-                    { name: "Tailwind CSS", progress: 85 },
-                  // { name: "Prisma", progress: 70 },
-                   // { name: "Vercel", progress: 80 },
-                   // { name: "Postman", progress: 85 },
-                    { name: "Firebase", progress: 50 }
-                  ].map((tool, i) => (
-                    <div key={tool.name} className="flex items-center gap-4">
-                      <span className="text-sm font-medium text-foreground min-w-[100px]">{tool.name}</span>
-                      <div className="flex-1 hidden md:block md:w-[75%]">
-                        <Progress value={tool.progress} className="h-2" />
-                      </div>
+                    { name: "React", icon: "/icons/react-svgrepo-com.svg" },
+                    { name: "Next.js", icon: "/icons/nextjs-icon-svgrepo-com.svg" },
+                    { name: "Node.js", icon: "/icons/node-svgrepo-com.svg" },
+                    { name: "GraphQL", icon: "/icons/graphql-svgrepo-com.svg" },
+                    { name: "Firebase", icon: "/icons/firebase-svgrepo-com.svg" },
+                    { name: "WordPress", icon: "/icons/wordpress-color-svgrepo-com.svg" }
+                  ].map((tech: { name: string; icon: string }, index: number) => (
+                    <div key={index} className="flex items-center gap-2">
+                      <Image
+                        src={tech.icon}
+                        alt={`${tech.name} icon`}
+                        width={24}
+                        height={24}
+                        className="w-5 h-5 md:w-6 md:h-6"
+                      />
+                      <span className="text-xs md:text-sm font-medium text-foreground">{tech.name}</span>
                     </div>
                   ))}
                 </div>
               </div>
-            </div>
-            
-            {/* Show More/Less Button */}
-            <div className="flex justify-center mt-8">
-              <Button
-                onClick={() => setShowMoreSkills(!showMoreSkills)}
-                variant="outline"
-                className="mt-4 text-foreground hover:text-success hover:border-success transition-colors w-[140px]"
-              >
-                <div className="flex items-center justify-center space-x-2">
-                  <span>{showMoreSkills ? "Show Less" : "Show More"}</span>
-                  <ChevronDownIcon
-                    className={`h-4 w-4 transition-transform duration-200 ${
-                      showMoreSkills ? "rotate-180" : ""
-                    }`}
-                  />
+
+              {/* Column 3 */}
+              <div className="animate-slide-in delay-300">
+                <div className="space-y-2 md:space-y-4">
+                  {[
+                    { name: "HTML", icon: "/icons/html-5-svgrepo-com.svg" },
+                    { name: "CSS", icon: "/icons/css-svgrepo-com.svg" },
+                    { name: "Tailwind", icon: "/icons/tailwind-svgrepo-com.svg" },
+                    { name: "PHP", icon: "/icons/php-1-logo-svgrepo-com.svg" },
+                    { name: "SQL", icon: "/icons/sql-database-generic-svgrepo-com.svg" },
+                    { name: "Figma", icon: "/icons/figma-svgrepo-com.svg" }
+                  ].map((tech: { name: string; icon: string }, index: number) => (
+                    <div key={index} className="flex items-center gap-2">
+                      <Image
+                        src={tech.icon}
+                        alt={`${tech.name} icon`}
+                        width={24}
+                        height={24}
+                        className="w-5 h-5 md:w-6 md:h-6"
+                      />
+                      <span className="text-xs md:text-sm font-medium text-foreground">{tech.name}</span>
+                    </div>
+                  ))}
                 </div>
-              </Button>
+              </div>
+
+              {/* Column 4 */}
+              <div className="animate-slide-in delay-400">
+                <div className="space-y-2 md:space-y-4">
+                  {[
+                    { name: "Docker", icon: "/icons/docker-svgrepo-com(1).svg" },
+                    { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
+                    { name: "AWS", icon: "/icons/aws-svgrepo-com.svg" },
+                    { name: "Azure", icon: "/icons/azure-svgrepo-com.svg" },
+                    { name: "Nginx", icon: "/icons/nginx-svgrepo-com.svg" },
+                    { name: "Slack", icon: "/icons/slack-svgrepo-com.svg" }
+                  ].map((tech: { name: string; icon: string }, index: number) => (
+                    <div key={index} className="flex items-center gap-2">
+                      <Image
+                        src={tech.icon}
+                        alt={`${tech.name} icon`}
+                        width={24}
+                        height={24}
+                        className="w-5 h-5 md:w-6 md:h-6"
+                      />
+                      <span className="text-xs md:text-sm font-medium text-foreground">{tech.name}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Column 5 */}
+              <div className="animate-slide-in delay-500">
+                <div className="space-y-2 md:space-y-4">
+                  {[
+                    { name: "Linux", icon: "/icons/linux-svgrepo-com(1).svg" },
+                    { name: "Ubuntu", icon: "/icons/ubuntu-svgrepo-com.svg" },
+                    { name: "Fedora", icon: "/icons/fedora-svgrepo-com.svg" },
+                    { name: "Debian", icon: "/icons/debian-svgrepo-com.svg" },
+                    { name: "Arch", icon: "/icons/arch-linux-svgrepo-com.svg" },
+                    { name: "Apple", icon: "/icons/apple-svgrepo-com.svg" }
+                  ].map((tech: { name: string; icon: string }, index: number) => (
+                    <div key={index} className="flex items-center gap-2">
+                      <Image
+                        src={tech.icon}
+                        alt={`${tech.name} icon`}
+                        width={24}
+                        height={24}
+                        className="w-5 h-5 md:w-6 md:h-6"
+                      />
+                      <span className="text-xs md:text-sm font-medium text-foreground">{tech.name}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Column 6 */}
+              <div className="animate-slide-in delay-600">
+                <div className="space-y-2 md:space-y-4">
+                  {[
+                    { name: "VS Code", icon: "/icons/vscode-svgrepo-com.svg" },
+                    { name: "VisualStudio", icon: "/icons/visual-studio-svgrepo-com.svg" },
+                    { name: "PowerShell", icon: "/icons/powershell-svgrepo-com.svg" },
+                    { name: "Bash", icon: "/icons/bash-icon-svgrepo-com.svg" },
+                    { name: "Terminal", icon: "/icons/bash-icon-svgrepo-com.svg" },
+                    { name: "Notion", icon: "/icons/notion-logo-svgrepo-com.svg" }
+                  ].map((tech: { name: string; icon: string }, index: number) => (
+                    <div key={index} className="flex items-center gap-2">
+                      <Image
+                        src={tech.icon}
+                        alt={`${tech.name} icon`}
+                        width={24}
+                        height={24}
+                        className="w-5 h-5 md:w-6 md:h-6"
+                      />
+                      <span className="text-xs md:text-sm font-medium text-foreground">{tech.name}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </section>
