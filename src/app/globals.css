@@ -7,23 +7,23 @@
     /* Light theme using the three white colors */
     --background: 0 0% 100%; /* White #FFFFFF */
     --foreground: 0 0% 8%; /* Chinese Black for contrast */
-    --card: 0 0% 95%; /* Anti-Flash White #F3F3F3 */
+    --card: 0 0% 99.5%; /* Almost pure white - #FDFDFD */
     --card-foreground: 0 0% 8%; /* Chinese Black for contrast */
     --popover: 0 0% 88%; /* Chinese White #E1E1E1 */
     --popover-foreground: 0 0% 8%; /* Chinese Black for contrast */
     --primary: 0 0% 8%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 0 0% 95%;  /* Anti-Flash White */
+    --secondary: 0 0% 99.5%;  /* Matching new card color */
     --secondary-foreground: 0 0% 8%;
     --muted: 0 0% 88%; /* Chinese White */
     --muted-foreground: 0 0% 11%;
-    --accent: 0 0% 95%; /* Anti-Flash White */
+    --accent: 0 0% 99.5%; /* Matching new card color */
     --accent-foreground: 0 0% 8%;
     --success: 142 76% 36%;
     --success-foreground: 355.7 100% 97.3%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 88%; /* Chinese White */
+    --border: 0 0% 92%; /* Lighter border */
     --input: 0 0% 88%; /* Chinese White */
     --ring: 142 76% 36%;
     --radius: 0.5rem;
@@ -33,23 +33,23 @@
     /* Dark theme using the three black colors */
     --background: 0 0% 0%; /* Black #000000 */
     --foreground: 0 0% 100%; /* White for contrast */
-    --card: 0 0% 8%; /* Chinese Black #141414 */
+    --card: 0 0% 13%; /* Even lighter dark theme cards - #212121 */
     --card-foreground: 0 0% 100%; /* White for contrast */
     --popover: 0 0% 11%; /* Eerie Black #1B1B1B */
     --popover-foreground: 0 0% 100%; /* White for contrast */
     --primary: 0 0% 100%;
     --primary-foreground: 0 0% 0%;
-    --secondary: 0 0% 8%;  /* Chinese Black */
+    --secondary: 0 0% 13%;  /* Matching new card color */
     --secondary-foreground: 0 0% 100%;
     --muted: 0 0% 11%; /* Eerie Black */
     --muted-foreground: 0 0% 88%;
-    --accent: 0 0% 8%; /* Chinese Black */
+    --accent: 0 0% 13%; /* Matching new card color */
     --accent-foreground: 0 0% 100%;
     --success: 142 70% 50%;
     --success-foreground: 144.9 80.4% 10%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 85.7% 97.3%;
-    --border: 0 0% 11%; /* Eerie Black */
+    --border: 0 0% 15%; /* Lighter border for dark theme */
     --input: 0 0% 11%; /* Eerie Black */
     --ring: 142 70% 50%;
   }
