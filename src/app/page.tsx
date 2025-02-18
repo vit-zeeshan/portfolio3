@@ -218,7 +218,7 @@ export default function Page() {
           <h2 className="text-3xl font-bold mb-12 text-center">Skills && Technologies</h2>
           <div className="card-spotify rounded-lg p-4">
             <div className="grid grid-cols-3 lg:grid-cols-6 gap-4 md:gap-8">
-              {/* Column 1 */}
+              {/* Column 1 - Programming Languages */}
               <div className="animate-slide-in delay-100">
                 <div className="space-y-2 md:space-y-4">
                   {[
@@ -243,15 +243,15 @@ export default function Page() {
                 </div>
               </div>
 
-              {/* Column 2 */}
+              {/* Column 2 - Frontend Frameworks */}
               <div className="animate-slide-in delay-200">
                 <div className="space-y-2 md:space-y-4">
                   {[
                     { name: "React", icon: "/icons/react-svgrepo-com.svg" },
                     { name: "Next.js", icon: "/icons/nextjs-icon-svgrepo-com.svg" },
-                    { name: "Node.js", icon: "/icons/node-svgrepo-com.svg" },
+                    { name: "Redux", icon: "/icons/redux-svgrepo-com.svg" },
                     { name: "GraphQL", icon: "/icons/graphql-svgrepo-com.svg" },
-                    { name: "Firebase", icon: "/icons/firebase-svgrepo-com.svg" },
+                    { name: "Hugo", icon: "/icons/hugo-svgrepo-com.svg" },
                     { name: "WordPress", icon: "/icons/wordpress-color-svgrepo-com.svg" }
                   ].map((tech: { name: string; icon: string }, index: number) => (
                     <div key={index} className="flex items-center gap-2">
@@ -268,16 +268,16 @@ export default function Page() {
                 </div>
               </div>
 
-              {/* Column 3 */}
+              {/* Column 3 - Backend & Databases */}
               <div className="animate-slide-in delay-300">
                 <div className="space-y-2 md:space-y-4">
                   {[
-                    { name: "HTML", icon: "/icons/html-5-svgrepo-com.svg" },
-                    { name: "CSS", icon: "/icons/css-svgrepo-com.svg" },
-                    { name: "Tailwind", icon: "/icons/tailwind-svgrepo-com.svg" },
-                    { name: "PHP", icon: "/icons/php-1-logo-svgrepo-com.svg" },
-                    { name: "SQL", icon: "/icons/sql-database-generic-svgrepo-com.svg" },
-                    { name: "Figma", icon: "/icons/figma-svgrepo-com.svg" }
+                    { name: "Node.js", icon: "/icons/node-svgrepo-com.svg" },
+                    { name: "Express", icon: "/icons/express-svgrepo-com.svg" },
+                    { name: "PostgreSQL", icon: "/icons/postgresql-svgrepo-com.svg" },
+                    { name: "MongoDB", icon: "/icons/mongodb-svgrepo-com.svg" },
+                    { name: "Firebase", icon: "/icons/firebase-svgrepo-com.svg" },
+                    { name: "PHP", icon: "/icons/php-1-logo-svgrepo-com.svg" }
                   ].map((tech: { name: string; icon: string }, index: number) => (
                     <div key={index} className="flex items-center gap-2">
                       <Image
@@ -293,16 +293,16 @@ export default function Page() {
                 </div>
               </div>
 
-              {/* Column 4 */}
+              {/* Column 4 - DevOps & Cloud */}
               <div className="animate-slide-in delay-400">
                 <div className="space-y-2 md:space-y-4">
                   {[
                     { name: "Docker", icon: "/icons/docker-svgrepo-com(1).svg" },
                     { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
+                    { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" },
+                    { name: "GitLab", icon: "/icons/gitlab-svgrepo-com.svg" },
                     { name: "AWS", icon: "/icons/aws-svgrepo-com.svg" },
-                    { name: "Azure", icon: "/icons/azure-svgrepo-com.svg" },
-                    { name: "Nginx", icon: "/icons/nginx-svgrepo-com.svg" },
-                    { name: "Slack", icon: "/icons/slack-svgrepo-com.svg" }
+                    { name: "Azure", icon: "/icons/azure-svgrepo-com.svg" }
                   ].map((tech: { name: string; icon: string }, index: number) => (
                     <div key={index} className="flex items-center gap-2">
                       <Image
@@ -318,7 +318,7 @@ export default function Page() {
                 </div>
               </div>
 
-              {/* Column 5 */}
+              {/* Column 5 - Operating Systems */}
               <div className="animate-slide-in delay-500">
                 <div className="space-y-2 md:space-y-4">
                   {[
@@ -343,15 +343,15 @@ export default function Page() {
                 </div>
               </div>
 
-              {/* Column 6 */}
+              {/* Column 6 - Development Tools */}
               <div className="animate-slide-in delay-600">
                 <div className="space-y-2 md:space-y-4">
                   {[
                     { name: "VS Code", icon: "/icons/vscode-svgrepo-com.svg" },
                     { name: "VisualStudio", icon: "/icons/visual-studio-svgrepo-com.svg" },
+                    { name: "Terminal", icon: "/icons/terminal-svgrepo-com.svg" },
                     { name: "PowerShell", icon: "/icons/powershell-svgrepo-com.svg" },
                     { name: "Bash", icon: "/icons/bash-icon-svgrepo-com.svg" },
-                    { name: "Terminal", icon: "/icons/bash-icon-svgrepo-com.svg" },
                     { name: "Notion", icon: "/icons/notion-logo-svgrepo-com.svg" }
                   ].map((tech: { name: string; icon: string }, index: number) => (
                     <div key={index} className="flex items-center gap-2">
