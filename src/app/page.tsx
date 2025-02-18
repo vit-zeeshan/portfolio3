@@ -903,7 +903,7 @@ export default function Page() {
                       href={cert.link} 
                       target="_blank" 
                       rel="noopener noreferrer" 
-                      className="text-muted-foreground hover:text-foreground inline-flex items-center space-x-1 transition-colors group"
+                      className="text-muted-foreground hover:text-foreground inline-flex items-center space-x-1 transition-colors group text-[0.75em]"
                     >
                       <span className="group-hover:translate-x-1 transition-transform duration-200">View Certificate</span>
                       <span className="group-hover:translate-x-1 transition-transform duration-200">→</span>
