@@ -893,6 +893,8 @@ export default function Page() {
                     <div className="flex items-center gap-2 mb-2">
                       <p className="text-muted-foreground text-[0.6em]">{cert.type}</p>
                       <span className="text-muted-foreground text-[0.6em]">•</span>
+                      <p className="text-muted-foreground text-[0.6em]">{cert.issuer}</p>
+                      <span className="text-muted-foreground text-[0.6em]">•</span>
                       <p className="text-muted-foreground text-[0.6em]">{cert.date}</p>
                     </div>
                   </div>
