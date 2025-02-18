@@ -887,7 +887,7 @@ export default function Page() {
                   ]
                 }
               ].slice(0, visibleCertCount).map((cert, index) => (
-                <div key={index} className={`card-spotify p-8 rounded-lg hover-lift animate-scale-in delay-${(index % 4 + 1) * 100} flex flex-col`}>
+                <div key={index} className={`card-spotify p-4 rounded-lg hover-lift animate-scale-in delay-${(index % 4 + 1) * 100} flex flex-col`}>
                   <div>
                     <h3 className="text-xl font-bold mb-3 text-foreground">{cert.title}</h3>
                     <div className="flex items-center gap-2 mb-2">
