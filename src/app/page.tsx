@@ -60,55 +60,83 @@ export default function Page() {
       title: "Dev Toolbox",
       description: "A collection of development tools and utilities",
       content: "A comprehensive collection of development tools and utilities to streamline the development workflow",
-      link: "https://github.com/fernand3z/dev-toolbox"
+      link: "https://github.com/fernand3z/dev-toolbox",
+      technologies: [
+        { name: "Python", icon: "/icons/python-svgrepo-com.svg" },
+        { name: "Bash", icon: "/icons/bash-icon-svgrepo-com.svg" },
+        { name: "Linux", icon: "/icons/linux-svgrepo-com(1).svg" }
+      ]
     },
     {
       title: "Update Script",
       description: "A script for automating system updates and maintenance tasks",
       content: "Streamlines the process of keeping your system up-to-date with automated checks and updates",
-      link: "https://github.com/fernand3z/update-script"
+      link: "https://github.com/fernand3z/update-script",
+      technologies: [
+        { name: "Bash", icon: "/icons/bash-icon-svgrepo-com.svg" },
+        { name: "Linux", icon: "/icons/linux-svgrepo-com(1).svg" }
+      ]
     },
     {
       title: "Portfolio Website",
       description: "Modern portfolio website built with Next.js and Tailwind CSS",
       content: "A responsive and animated portfolio showcasing my projects and skills",
-      link: "https://github.com/fernand3z/portfolio"
+      link: "https://github.com/fernand3z/portfolio",
+      technologies: [
+        { name: "Next.js", icon: "/icons/nextjs-icon-svgrepo-com.svg" },
+        { name: "React", icon: "/icons/react-svgrepo-com.svg" },
+        { name: "TypeScript", icon: "/icons/typescript-svgrepo-com.svg" },
+        { name: "Tailwind", icon: "/icons/tailwind-svgrepo-com.svg" }
+      ]
     },
     {
       title: "Personal Blog Site",
       description: "A modern blog site built with Hugo static site generator",
       content: "Fast and minimalist blog featuring custom themes, responsive design, and markdown support",
-      link: "https://github.com/fernand3z/my-blog-site"
+      link: "https://github.com/fernand3z/my-blog-site",
+      technologies: [
+        { name: "Hugo", icon: "/icons/hugo-svgrepo-com.svg" },
+        { name: "Git", icon: "/icons/git-svgrepo-com.svg" }
+      ]
     },
     {
       title: "ytmusic Downloader",
       description: "Python script for downloading music from YTmusic using the yt-dlp library",
       content: "A simple Python script to download audio from YouTube videos",
-      link: "https://github.com/fernand3z/yt-music-downloader"
+      link: "https://github.com/fernand3z/yt-music-downloader",
+      technologies: [
+        { name: "Python", icon: "/icons/python-svgrepo-com.svg" }
+      ]
     },
     {
       title: "Devlogz Blog App",
       description: "A WebView-based Android app for my personal blog",
       content: "Android application that provides a native app experience for my blog site with offline capabilities and push notifications",
-      link: "https://github.com/fernand3z/my-webview-app"
+      link: "https://github.com/fernand3z/my-webview-app",
+      technologies: [
+        { name: "Java", icon: "/icons/java-svgrepo-com.svg" }
+      ]
     },
     {
       title: "Coming Soon",
       description: "Future project planned",
       content: "Another exciting project in the pipeline. Stay tuned for updates!",
-      status: "In Planning"
+      status: "In Planning",
+      technologies: []
     },
     {
       title: "Coming Soon",
       description: "Future project planned",
       content: "Another exciting project in the pipeline. Stay tuned for updates!",
-      status: "In Planning"
+      status: "In Planning",
+      technologies: []
     },
     {
       title: "Coming Soon",
       description: "Future project planned",
       content: "Another exciting project in the pipeline. Stay tuned for updates!",
-      status: "In Planning"
+      status: "In Planning",
+      technologies: []
     }
   ];
 
@@ -233,9 +261,9 @@ export default function Page() {
                       <Image
                         src={tech.icon}
                         alt={`${tech.name} icon`}
-                        width={24}
-                        height={24}
-                        className="w-5 h-5 md:w-6 md:h-6"
+                        width={16}
+                        height={16}
+                        className="w-4 h-4"
                       />
                       <span className="text-xs md:text-sm font-medium text-foreground">{tech.name}</span>
                     </div>
@@ -258,9 +286,9 @@ export default function Page() {
                       <Image
                         src={tech.icon}
                         alt={`${tech.name} icon`}
-                        width={24}
-                        height={24}
-                        className="w-5 h-5 md:w-6 md:h-6"
+                        width={16}
+                        height={16}
+                        className="w-4 h-4"
                       />
                       <span className="text-xs md:text-sm font-medium text-foreground">{tech.name}</span>
                     </div>
@@ -283,9 +311,9 @@ export default function Page() {
                       <Image
                         src={tech.icon}
                         alt={`${tech.name} icon`}
-                        width={24}
-                        height={24}
-                        className="w-5 h-5 md:w-6 md:h-6"
+                        width={16}
+                        height={16}
+                        className="w-4 h-4"
                       />
                       <span className="text-xs md:text-sm font-medium text-foreground">{tech.name}</span>
                     </div>
@@ -308,9 +336,9 @@ export default function Page() {
                       <Image
                         src={tech.icon}
                         alt={`${tech.name} icon`}
-                        width={24}
-                        height={24}
-                        className="w-5 h-5 md:w-6 md:h-6"
+                        width={16}
+                        height={16}
+                        className="w-4 h-4"
                       />
                       <span className="text-xs md:text-sm font-medium text-foreground">{tech.name}</span>
                     </div>
@@ -333,9 +361,9 @@ export default function Page() {
                       <Image
                         src={tech.icon}
                         alt={`${tech.name} icon`}
-                        width={24}
-                        height={24}
-                        className="w-5 h-5 md:w-6 md:h-6"
+                        width={16}
+                        height={16}
+                        className="w-4 h-4"
                       />
                       <span className="text-xs md:text-sm font-medium text-foreground">{tech.name}</span>
                     </div>
@@ -358,9 +386,9 @@ export default function Page() {
                       <Image
                         src={tech.icon}
                         alt={`${tech.name} icon`}
-                        width={24}
-                        height={24}
-                        className="w-5 h-5 md:w-6 md:h-6"
+                        width={16}
+                        height={16}
+                        className="w-4 h-4"
                       />
                       <span className="text-xs md:text-sm font-medium text-foreground">{tech.name}</span>
                     </div>
@@ -388,6 +416,27 @@ export default function Page() {
                     <p className="text-muted-foreground text-[0.75em]">
                       {project.content}
                     </p>
+                    {project.technologies && project.technologies.length > 0 && (
+                      <div className="flex gap-2 mt-4">
+                        {project.technologies.map((tech, techIndex) => (
+                          <div
+                            key={techIndex}
+                            className="relative group"
+                          >
+                            <Image
+                              src={tech.icon}
+                              alt={`${tech.name} icon`}
+                              width={16}
+                              height={16}
+                              className="w-4 h-4"
+                            />
+                            <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-xs bg-popover text-popover-foreground rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                              {tech.name}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
                   </CardContent>
                   <CardFooter className="mt-auto">
                     {project.link ? (
@@ -958,8 +1007,8 @@ export default function Page() {
                           <Image
                             src={provider.icon}
                             alt={`${provider.name} logo`}
-                            width={24}
-                            height={24}
+                            width={16}
+                            height={16}
                             className="w-full h-full object-contain"
                           />
                         </a>
