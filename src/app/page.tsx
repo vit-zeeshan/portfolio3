@@ -254,8 +254,9 @@ export default function Page() {
                     { name: "TypeScript", icon: "/icons/typescript-svgrepo-com.svg" },
                     { name: "Python", icon: "/icons/python-svgrepo-com.svg" },
                     { name: "Java", icon: "/icons/java-svgrepo-com.svg" },
-                    { name: "C", icon: "/icons/c.svg" },
-                    { name: "Go", icon: "/icons/go-svgrepo-com.svg" }
+                    { name: "HTML", icon: "/icons/html-5-svgrepo-com.svg" },
+                    { name: "CSS", icon: "/icons/css-svgrepo-com.svg" },
+                    { name: "C", icon: "/icons/c.svg" }
                   ].map((tech: { name: string; icon: string }, index: number) => (
                     <div key={index} className="flex items-center gap-2">
                       <Image
@@ -280,7 +281,8 @@ export default function Page() {
                     { name: "Redux", icon: "/icons/redux-svgrepo-com.svg" },
                     { name: "GraphQL", icon: "/icons/graphql-svgrepo-com.svg" },
                     { name: "Hugo", icon: "/icons/hugo-svgrepo-com.svg" },
-                    { name: "WordPress", icon: "/icons/wordpress-color-svgrepo-com.svg" }
+                    { name: "WordPress", icon: "/icons/wordpress-color-svgrepo-com.svg" },
+                    { name: "React Native", icon: "/icons/reactnative-svgrepo-com.svg" }
                   ].map((tech: { name: string; icon: string }, index: number) => (
                     <div key={index} className="flex items-center gap-2">
                       <Image
@@ -305,7 +307,8 @@ export default function Page() {
                     { name: "PostgreSQL", icon: "/icons/postgresql-svgrepo-com.svg" },
                     { name: "MongoDB", icon: "/icons/mongodb-svgrepo-com.svg" },
                     { name: "Firebase", icon: "/icons/firebase-svgrepo-com.svg" },
-                    { name: "PHP", icon: "/icons/php-1-logo-svgrepo-com.svg" }
+                    { name: "PHP", icon: "/icons/php-1-logo-svgrepo-com.svg" },
+                    { name: "SQL", icon: "/icons/sql-database-generic-svgrepo-com.svg" }
                   ].map((tech: { name: string; icon: string }, index: number) => (
                     <div key={index} className="flex items-center gap-2">
                       <Image
@@ -330,7 +333,8 @@ export default function Page() {
                     { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" },
                     { name: "GitLab", icon: "/icons/gitlab-svgrepo-com.svg" },
                     { name: "AWS", icon: "/icons/aws-svgrepo-com.svg" },
-                    { name: "Azure", icon: "/icons/azure-svgrepo-com.svg" }
+                    { name: "Azure", icon: "/icons/azure-svgrepo-com.svg" },
+                    { name: "Nginx", icon: "/icons/nginx-svgrepo-com.svg" }
                   ].map((tech: { name: string; icon: string }, index: number) => (
                     <div key={index} className="flex items-center gap-2">
                       <Image
@@ -353,9 +357,10 @@ export default function Page() {
                     { name: "Linux", icon: "/icons/linux-svgrepo-com(1).svg" },
                     { name: "Ubuntu", icon: "/icons/ubuntu-svgrepo-com.svg" },
                     { name: "Fedora", icon: "/icons/fedora-svgrepo-com.svg" },
-                    { name: "Debian", icon: "/icons/debian-svgrepo-com.svg" },
                     { name: "Arch", icon: "/icons/arch-linux-svgrepo-com.svg" },
-                    { name: "Apple", icon: "/icons/apple-svgrepo-com.svg" }
+                    { name: "Apple", icon: "/icons/apple-svgrepo-com.svg" },
+                    { name: "Slack", icon: "/icons/slack-svgrepo-com.svg" },
+                    { name: "Go", icon: "/icons/go-svgrepo-com.svg" }
                   ].map((tech: { name: string; icon: string }, index: number) => (
                     <div key={index} className="flex items-center gap-2">
                       <Image
@@ -376,11 +381,12 @@ export default function Page() {
                 <div className="space-y-2 md:space-y-4">
                   {[
                     { name: "VS Code", icon: "/icons/vscode-svgrepo-com.svg" },
-                    { name: "VisualStudio", icon: "/icons/visual-studio-svgrepo-com.svg" },
+                    { name: "Jupyter", icon: "/icons/jupyter-svgrepo-com.svg" },
                     { name: "Terminal", icon: "/icons/terminal-svgrepo-com.svg" },
                     { name: "PowerShell", icon: "/icons/powershell-svgrepo-com.svg" },
                     { name: "Bash", icon: "/icons/bash-icon-svgrepo-com.svg" },
-                    { name: "Notion", icon: "/icons/notion-logo-svgrepo-com.svg" }
+                    { name: "Notion", icon: "/icons/notion-logo-svgrepo-com.svg" },
+                    { name: "Figma", icon: "/icons/figma-svgrepo-com.svg" }
                   ].map((tech: { name: string; icon: string }, index: number) => (
                     <div key={index} className="flex items-center gap-2">
                       <Image
