@@ -9,7 +9,7 @@
     --foreground: 0 0% 8%; /* Chinese Black for contrast */
     --card: 0 0% 99.5%; /* Almost pure white - #FDFDFD */
     --card-foreground: 0 0% 8%; /* Chinese Black for contrast */
-    --popover: 0 0% 88%; /* Chinese White #E1E1E1 */
+    --popover: 0 0% 100%; /* Pure white #FFFFFF */
     --popover-foreground: 0 0% 8%; /* Chinese Black for contrast */
     --primary: 0 0% 8%;
     --primary-foreground: 0 0% 100%;
@@ -17,7 +17,7 @@
     --secondary-foreground: 0 0% 8%;
     --muted: 0 0% 88%; /* Chinese White */
     --muted-foreground: 0 0% 11%;
-    --accent: 0 0% 99.5%; /* Matching new card color */
+    --accent: 0 0% 96%; /* Light gray for hover states */
     --accent-foreground: 0 0% 8%;
     --success: 142 76% 36%;
     --success-foreground: 355.7 100% 97.3%;
