@@ -813,7 +813,7 @@ export default function Page() {
                       rel="noopener noreferrer"
                       className="hover:text-primary transition-colors"
                     >
-                      <CardTitle>Associate's degree, Computer Science</CardTitle>
+                      <CardTitle>Associate's degree: Computer Science</CardTitle>
                     </a>
                     <CardDescription>
                       <span className="block text-muted-foreground">Vocational Training Authority</span>
@@ -851,7 +851,7 @@ export default function Page() {
                       rel="noopener noreferrer"
                       className="hover:text-primary transition-colors"
                     >
-                      <CardTitle>Master's degree, Business Administration and Management</CardTitle>
+                      <CardTitle>Master's degree: Business Administration and Management</CardTitle>
                     </a>
                     <CardDescription>
                       <span className="block text-muted-foreground">University of Central Lancashire</span>
