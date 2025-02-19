@@ -372,7 +372,7 @@ export default function Page() {
                     { name: "Arch", icon: "/icons/arch-linux-svgrepo-com.svg" },
                     { name: "Apple", icon: "/icons/apple-svgrepo-com.svg" },
                     { name: "Slack", icon: "/icons/slack-svgrepo-com.svg" },
-                    { name: "Redux", icon: "/icons/redux-svgrepo-com.svg" }
+                    { name: "Vim", icon: "/icons/vim-svgrepo-com.svg" }
                   ].map((tech: { name: string; icon: string }, index: number) => (
                     <div key={index} className="flex items-center gap-2">
                       <Image
