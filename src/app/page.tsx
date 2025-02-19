@@ -262,9 +262,9 @@ export default function Page() {
                       <Image
                         src={tech.icon}
                         alt={`${tech.name} icon`}
-                        width={16}
-                        height={16}
-                        className="w-4 h-4"
+                        width={20}
+                        height={20}
+                        className="w-5 h-5"
                       />
                       <span className="text-xs md:text-sm font-medium text-foreground">{tech.name}</span>
                     </div>
@@ -282,15 +282,15 @@ export default function Page() {
                     { name: "GraphQL", icon: "/icons/graphql-svgrepo-com.svg" },
                     { name: "Hugo", icon: "/icons/hugo-svgrepo-com.svg" },
                     { name: "WordPress", icon: "/icons/wordpress-color-svgrepo-com.svg" },
-                    { name: "React Native", icon: "/icons/reactnative-svgrepo-com.svg" }
+                    { name: "ReactNative", icon: "/icons/reactnative-svgrepo-com.svg" }
                   ].map((tech: { name: string; icon: string }, index: number) => (
                     <div key={index} className="flex items-center gap-2">
                       <Image
                         src={tech.icon}
                         alt={`${tech.name} icon`}
-                        width={16}
-                        height={16}
-                        className="w-4 h-4"
+                        width={20}
+                        height={20}
+                        className="w-5 h-5"
                       />
                       <span className="text-xs md:text-sm font-medium text-foreground">{tech.name}</span>
                     </div>
@@ -314,9 +314,9 @@ export default function Page() {
                       <Image
                         src={tech.icon}
                         alt={`${tech.name} icon`}
-                        width={16}
-                        height={16}
-                        className="w-4 h-4"
+                        width={20}
+                        height={20}
+                        className="w-5 h-5"
                       />
                       <span className="text-xs md:text-sm font-medium text-foreground">{tech.name}</span>
                     </div>
@@ -340,9 +340,9 @@ export default function Page() {
                       <Image
                         src={tech.icon}
                         alt={`${tech.name} icon`}
-                        width={16}
-                        height={16}
-                        className="w-4 h-4"
+                        width={20}
+                        height={20}
+                        className="w-5 h-5"
                       />
                       <span className="text-xs md:text-sm font-medium text-foreground">{tech.name}</span>
                     </div>
@@ -366,9 +366,9 @@ export default function Page() {
                       <Image
                         src={tech.icon}
                         alt={`${tech.name} icon`}
-                        width={16}
-                        height={16}
-                        className="w-4 h-4"
+                        width={20}
+                        height={20}
+                        className="w-5 h-5"
                       />
                       <span className="text-xs md:text-sm font-medium text-foreground">{tech.name}</span>
                     </div>
@@ -392,9 +392,9 @@ export default function Page() {
                       <Image
                         src={tech.icon}
                         alt={`${tech.name} icon`}
-                        width={16}
-                        height={16}
-                        className="w-4 h-4"
+                        width={20}
+                        height={20}
+                        className="w-5 h-5"
                       />
                       <span className="text-xs md:text-sm font-medium text-foreground">{tech.name}</span>
                     </div>
@@ -432,9 +432,9 @@ export default function Page() {
                             <Image
                               src={tech.icon}
                               alt={`${tech.name} icon`}
-                              width={16}
-                              height={16}
-                              className="w-4 h-4"
+                              width={20}
+                              height={20}
+                              className="w-5 h-5"
                             />
                             <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-xs bg-popover text-popover-foreground rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
                               {tech.name}
