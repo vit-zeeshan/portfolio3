@@ -265,9 +265,9 @@ export default function Page() {
                     { name: "TypeScript", icon: "/icons/typescript-svgrepo-com.svg" },
                     { name: "Python", icon: "/icons/python-svgrepo-com.svg" },
                     { name: "Java", icon: "/icons/java-svgrepo-com.svg" },
+                    { name: "C", icon: "/icons/c.svg" },
                     { name: "HTML", icon: "/icons/html-5-svgrepo-com.svg" },
-                    { name: "CSS", icon: "/icons/css-svgrepo-com.svg" },
-                    { name: "C", icon: "/icons/c.svg" }
+                    { name: "CSS", icon: "/icons/css-svgrepo-com.svg" }
                   ].map((tech: { name: string; icon: string }, index: number) => (
                     <div key={index} className="flex items-center gap-2">
                       <Image
@@ -289,7 +289,7 @@ export default function Page() {
                   {[
                     { name: "React", icon: "/icons/react-svgrepo-com.svg" },
                     { name: "Next.js", icon: "/icons/nextjs-icon-svgrepo-com.svg" },
-                    { name: "Redux", icon: "/icons/redux-svgrepo-com.svg" },
+                    { name: "Tailwind", icon: "/icons/tailwind-svgrepo-com.svg" },
                     { name: "GraphQL", icon: "/icons/graphql-svgrepo-com.svg" },
                     { name: "Hugo", icon: "/icons/hugo-svgrepo-com.svg" },
                     { name: "WordPress", icon: "/icons/wordpress-color-svgrepo-com.svg" },
@@ -371,7 +371,7 @@ export default function Page() {
                     { name: "Arch", icon: "/icons/arch-linux-svgrepo-com.svg" },
                     { name: "Apple", icon: "/icons/apple-svgrepo-com.svg" },
                     { name: "Slack", icon: "/icons/slack-svgrepo-com.svg" },
-                    { name: "Go", icon: "/icons/go-svgrepo-com.svg" }
+                    { name: "Redux", icon: "/icons/redux-svgrepo-com.svg" }
                   ].map((tech: { name: string; icon: string }, index: number) => (
                     <div key={index} className="flex items-center gap-2">
                       <Image
