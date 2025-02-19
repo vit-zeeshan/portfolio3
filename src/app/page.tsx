@@ -64,7 +64,9 @@ export default function Page() {
       technologies: [
         { name: "Python", icon: "/icons/python-svgrepo-com.svg" },
         { name: "Bash", icon: "/icons/bash-icon-svgrepo-com.svg" },
-        { name: "Linux", icon: "/icons/linux-svgrepo-com(1).svg" }
+        { name: "Linux", icon: "/icons/linux-svgrepo-com(1).svg" },
+        { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
+        { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" }
       ]
     },
     {
@@ -74,7 +76,9 @@ export default function Page() {
       link: "https://github.com/fernand3z/update-script",
       technologies: [
         { name: "Bash", icon: "/icons/bash-icon-svgrepo-com.svg" },
-        { name: "Linux", icon: "/icons/linux-svgrepo-com(1).svg" }
+        { name: "Linux", icon: "/icons/linux-svgrepo-com(1).svg" },
+        { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
+        { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" }
       ]
     },
     {
@@ -86,7 +90,9 @@ export default function Page() {
         { name: "Next.js", icon: "/icons/nextjs-icon-svgrepo-com.svg" },
         { name: "React", icon: "/icons/react-svgrepo-com.svg" },
         { name: "TypeScript", icon: "/icons/typescript-svgrepo-com.svg" },
-        { name: "Tailwind", icon: "/icons/tailwind-svgrepo-com.svg" }
+        { name: "Tailwind", icon: "/icons/tailwind-svgrepo-com.svg" },
+        { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
+        { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" }
       ]
     },
     {
@@ -96,7 +102,8 @@ export default function Page() {
       link: "https://github.com/fernand3z/my-blog-site",
       technologies: [
         { name: "Hugo", icon: "/icons/hugo-svgrepo-com.svg" },
-        { name: "Git", icon: "/icons/git-svgrepo-com.svg" }
+        { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
+        { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" }
       ]
     },
     {
@@ -105,7 +112,9 @@ export default function Page() {
       content: "A simple Python script to download audio from YouTube videos",
       link: "https://github.com/fernand3z/yt-music-downloader",
       technologies: [
-        { name: "Python", icon: "/icons/python-svgrepo-com.svg" }
+        { name: "Python", icon: "/icons/python-svgrepo-com.svg" },
+        { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
+        { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" }
       ]
     },
     {
@@ -114,7 +123,9 @@ export default function Page() {
       content: "Android application that provides a native app experience for my blog site with offline capabilities and push notifications",
       link: "https://github.com/fernand3z/my-webview-app",
       technologies: [
-        { name: "Java", icon: "/icons/java-svgrepo-com.svg" }
+        { name: "Java", icon: "/icons/java-svgrepo-com.svg" },
+        { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
+        { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" }
       ]
     },
     {
@@ -563,15 +574,34 @@ export default function Page() {
                   <p className="text-muted-foreground mb-4 text-[0.75em]">
                     Leading IT infrastructure management and optimization at NUMBER PLATE CLINIC, focusing on system reliability, security, and automation. Responsible for implementing AI-driven solutions, maintaining cybersecurity standards, and ensuring seamless operations across all IT systems.
                   </p>
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <span>Skills:</span>
-                    <span className="text-foreground">IT Service Management, Systems Management</span>
-                    <button 
-                      onClick={() => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' })}
-                      className="text-muted-foreground hover:text-foreground"
-                    >
-                      Show all 8 skills
-                    </button>
+                  <div className="flex flex-wrap gap-2">
+                    {[
+                      { name: "Linux", icon: "/icons/linux-svgrepo-com(1).svg" },
+                      { name: "Docker", icon: "/icons/docker-svgrepo-com(1).svg" },
+                      { name: "Bash", icon: "/icons/bash-icon-svgrepo-com.svg" },
+                      { name: "Python", icon: "/icons/python-svgrepo-com.svg" },
+                      { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
+                      { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" },
+                      { name: "PostgreSQL", icon: "/icons/postgresql-svgrepo-com.svg" },
+                      { name: "Nginx", icon: "/icons/nginx-svgrepo-com.svg" },
+                      { name: "AWS", icon: "/icons/aws-svgrepo-com.svg" }
+                    ].map((tech, techIndex) => (
+                      <div
+                        key={techIndex}
+                        className="relative group"
+                      >
+                        <Image
+                          src={tech.icon}
+                          alt={`${tech.name} icon`}
+                          width={20}
+                          height={20}
+                          className="w-5 h-5"
+                        />
+                        <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-xs bg-popover text-popover-foreground rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                          {tech.name}
+                        </span>
+                      </div>
+                    ))}
                   </div>
                 </div>
 
@@ -582,15 +612,31 @@ export default function Page() {
                   <p className="text-muted-foreground mb-4 text-[0.75em]">
                     Supported core IT infrastructure operations and maintenance, with a focus on system reliability and security. Utilized automation tools and best practices to optimize workflows and maintain system integrity while assisting in implementing comprehensive IT solutions.
                   </p>
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <span>Skills:</span>
-                    <span className="text-foreground">Systems Management, Management</span>
-                    <button 
-                      onClick={() => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' })}
-                      className="text-muted-foreground hover:text-foreground"
-                    >
-                      Show all 6 skills
-                    </button>
+                  <div className="flex flex-wrap gap-2">
+                    {[
+                      { name: "Linux", icon: "/icons/linux-svgrepo-com(1).svg" },
+                      { name: "Bash", icon: "/icons/bash-icon-svgrepo-com.svg" },
+                      { name: "Python", icon: "/icons/python-svgrepo-com.svg" },
+                      { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
+                      { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" },
+                      { name: "PostgreSQL", icon: "/icons/postgresql-svgrepo-com.svg" }
+                    ].map((tech, techIndex) => (
+                      <div
+                        key={techIndex}
+                        className="relative group"
+                      >
+                        <Image
+                          src={tech.icon}
+                          alt={`${tech.name} icon`}
+                          width={20}
+                          height={20}
+                          className="w-5 h-5"
+                        />
+                        <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-xs bg-popover text-popover-foreground rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                          {tech.name}
+                        </span>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </CardContent>
@@ -625,15 +671,33 @@ export default function Page() {
                   <p className="text-muted-foreground mb-4 text-[0.75em]">
                     Specialized in developing custom WordPress solutions, including e-commerce websites and business platforms. Focused on creating high-performance, secure websites with optimized user experiences and comprehensive content management systems.
                   </p>
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <span>Skills:</span>
-                    <span className="text-foreground">WordPress, WooCommerce, PHP</span>
-                    <button 
-                      onClick={() => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' })}
-                      className="text-muted-foreground hover:text-foreground"
-                    >
-                      Show all 8 skills
-                    </button>
+                  <div className="flex flex-wrap gap-2">
+                    {[
+                      { name: "WordPress", icon: "/icons/wordpress-color-svgrepo-com.svg" },
+                      { name: "PHP", icon: "/icons/php-1-logo-svgrepo-com.svg" },
+                      { name: "HTML", icon: "/icons/html-5-svgrepo-com.svg" },
+                      { name: "CSS", icon: "/icons/css-svgrepo-com.svg" },
+                      { name: "JavaScript", icon: "/icons/javascript-svgrepo-com.svg" },
+                      { name: "MySQL", icon: "/icons/sql-database-generic-svgrepo-com.svg" },
+                      { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
+                      { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" }
+                    ].map((tech, techIndex) => (
+                      <div
+                        key={techIndex}
+                        className="relative group"
+                      >
+                        <Image
+                          src={tech.icon}
+                          alt={`${tech.name} icon`}
+                          width={20}
+                          height={20}
+                          className="w-5 h-5"
+                        />
+                        <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-xs bg-popover text-popover-foreground rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                          {tech.name}
+                        </span>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </CardContent>
@@ -682,15 +746,34 @@ export default function Page() {
                   <p className="text-muted-foreground mb-4 text-[0.75em]">
                     Developed and maintained web applications using various technologies including Bubble.io, WordPress, and custom web development tools. Created user-friendly interfaces, integrated third-party services, and ensured optimal performance across all platforms.
                   </p>
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <span>Skills:</span>
-                    <span className="text-foreground">Prototyping, HTML5</span>
-                    <button 
-                      onClick={() => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' })}
-                      className="text-muted-foreground hover:text-foreground"
-                    >
-                      Show all 20 skills
-                    </button>
+                  <div className="flex flex-wrap gap-2">
+                    {[
+                      { name: "HTML", icon: "/icons/html-5-svgrepo-com.svg" },
+                      { name: "CSS", icon: "/icons/css-svgrepo-com.svg" },
+                      { name: "JavaScript", icon: "/icons/javascript-svgrepo-com.svg" },
+                      { name: "WordPress", icon: "/icons/wordpress-color-svgrepo-com.svg" },
+                      { name: "PHP", icon: "/icons/php-1-logo-svgrepo-com.svg" },
+                      { name: "MySQL", icon: "/icons/sql-database-generic-svgrepo-com.svg" },
+                      { name: "Figma", icon: "/icons/figma-svgrepo-com.svg" },
+                      { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
+                      { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" }
+                    ].map((tech, techIndex) => (
+                      <div
+                        key={techIndex}
+                        className="relative group"
+                      >
+                        <Image
+                          src={tech.icon}
+                          alt={`${tech.name} icon`}
+                          width={20}
+                          height={20}
+                          className="w-5 h-5"
+                        />
+                        <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-xs bg-popover text-popover-foreground rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                          {tech.name}
+                        </span>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </CardContent>
