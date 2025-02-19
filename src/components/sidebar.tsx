@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { Sheet, SheetContent, SheetTrigger, SheetFooter } from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import { Menu } from "lucide-react"
 import { GitHubLogoIcon, LinkedInLogoIcon, TwitterLogoIcon, EnvelopeClosedIcon } from "@radix-ui/react-icons"
@@ -24,17 +24,18 @@ export function Sidebar({ sections, activeSection, onSectionClick }: SidebarProp
       <SheetContent side="left" className="w-[240px] sm:w-[280px] flex flex-col">
         <nav className="flex flex-col space-y-2">
           {sections.map((section) => (
-            <button
-              key={section}
-              onClick={() => onSectionClick(section)}
-              className={`w-full text-left px-4 py-2 text-sm capitalize rounded-md transition-colors ${
-                activeSection === section
-                  ? "text-foreground font-medium bg-background/50 dark:text-foreground dark:bg-background/70"
-                  : "text-muted-foreground hover:text-foreground hover:bg-background/50 dark:hover:text-foreground dark:hover:bg-background/70"
-              }`}
-            >
-              {section}
-            </button>
+            <SheetClose key={section} asChild>
+              <button
+                onClick={() => onSectionClick(section)}
+                className={`w-full text-left px-4 py-2 text-sm capitalize rounded-md transition-colors ${
+                  activeSection === section
+                    ? "text-foreground font-medium bg-background/50 dark:text-foreground dark:bg-background/70"
+                    : "text-muted-foreground hover:text-foreground hover:bg-background/50 dark:hover:text-foreground dark:hover:bg-background/70"
+                }`}
+              >
+                {section}
+              </button>
+            </SheetClose>
           ))}
         </nav>
         
