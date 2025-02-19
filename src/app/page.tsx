@@ -957,7 +957,7 @@ export default function Page() {
                 {
                   title: "Career Essentials in GitHub",
                   type: "Professional Certificate",
-                  issuer: "LinkedIn Learning and GitHub",
+                  issuer: "LinkedIn and GitHub",
                   date: "2025",
                   link: "https://www.linkedin.com/learning/certificates/95ab038988c255d63db1db0dc4b018e87cca009032a26917b5f3cb7b06802a80",
                   providers: [
@@ -968,7 +968,7 @@ export default function Page() {
                 {
                   title: "Career Essentials in System Administration",
                   type: "Professional Certificate",
-                  issuer: "LinkedIn Learning and Microsoft",
+                  issuer: "LinkedIn and Microsoft",
                   date: "2025",
                   link: "https://www.linkedin.com/learning/certificates/9b7ea63d32cd9a46772852f87edc3e13f32e8e6aefb95c4ebaa51ecb87c0b2b4",
                   providers: [
