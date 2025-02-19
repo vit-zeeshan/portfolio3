@@ -119,11 +119,12 @@ export default function Page() {
     },
     {
       title: "Devlogz Blog App",
-      description: "A WebView-based Android app for my personal blog",
-      content: "Android application that provides a native app experience for my blog site with offline capabilities and push notifications",
+      description: "A React Native mobile app for my personal blog",
+      content: "Cross-platform mobile application built with React Native that provides a native app experience for my blog site with offline capabilities and push notifications",
       link: "https://github.com/fernand3z/my-webview-app",
       technologies: [
-        { name: "Java", icon: "/icons/java-svgrepo-com.svg" },
+        { name: "React Native", icon: "/icons/reactnative-svgrepo-com.svg" },
+        { name: "JavaScript", icon: "/icons/javascript-svgrepo-com.svg" },
         { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
         { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" }
       ]
