@@ -14,43 +14,11 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { ChevronDown as ChevronDownIcon, ArrowRight as ArrowRightIcon } from "lucide-react"
+import { ArrowRight as ArrowRightIcon } from "lucide-react"
 import Image from "next/image"
-import { Progress } from "@/components/ui/progress"
 import { GitHubLogoIcon } from "@radix-ui/react-icons"
 
-const languages = [
-  { name: "JavaScript", progress: 85 },
-  { name: "Python", progress: 78 },
-  { name: "HTML", progress: 92 },
-  { name: "CSS", progress: 88 },
-  { name: "SQL", progress: 75 },
-  { name: "PHP", progress: 70 },
-  { name: "TypeScript", progress: 82 },
-  { name: "PowerShell", progress: 85 },
-  { name: "Bash", progress: 80 },
-  { name: "C++", progress: 65 },
-  { name: "Java", progress: 60 },
-  { name: "Ruby", progress: 55 }
-]
-
-const tools = [
-  { name: "Git", progress: 88 },
-  { name: "Docker", progress: 82 },
-  { name: "Linux", progress: 90 },
-  { name: "VS Code", progress: 95 },
-  { name: "Node.js", progress: 80 },
-  { name: "PostgreSQL", progress: 75 },
-  { name: "AWS", progress: 75 },
-  { name: "React", progress: 85 },
-  { name: "Next.js", progress: 80 },
-  { name: "MongoDB", progress: 70 },
-  { name: "Nginx", progress: 75 },
-  { name: "Jenkins", progress: 65 }
-]
-
 export default function Page() {
-  const [showMoreSkills, setShowMoreSkills] = useState(false)
   const [showMoreCerts, setShowMoreCerts] = useState(false)
   const [visibleProjectCount, setVisibleProjectCount] = useState(6)
   const [visibleCertCount, setVisibleCertCount] = useState(8)
