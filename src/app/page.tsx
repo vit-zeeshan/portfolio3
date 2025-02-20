@@ -63,6 +63,7 @@ export default function Page() {
       link: "https://github.com/fernand3z/dev-toolbox",
       technologies: [
         { name: "Python", icon: "/icons/python-svgrepo-com.svg" },
+        { name: "Prettier", icon: "/icons/prettier-svgrepo-com.svg" },
         { name: "Bash", icon: "/icons/bash-icon-svgrepo-com.svg" },
         { name: "Linux", icon: "/icons/linux-svgrepo-com(1).svg" },
         { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
@@ -91,6 +92,8 @@ export default function Page() {
         { name: "React", icon: "/icons/react-svgrepo-com.svg" },
         { name: "TypeScript", icon: "/icons/typescript-svgrepo-com.svg" },
         { name: "Tailwind", icon: "/icons/tailwind-svgrepo-com.svg" },
+        { name: "NPM", icon: "/icons/npm.svg" },
+        { name: "Prettier", icon: "/icons/prettier-svgrepo-com.svg" },
         { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
         { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" }
       ]
@@ -294,7 +297,7 @@ export default function Page() {
                     { name: "NPM", icon: "/icons/npm-svgrepo-com.svg" },
                     { name: "Hugo", icon: "/icons/hugo-svgrepo-com.svg" },
                     { name: "WordPress", icon: "/icons/wordpress-color-svgrepo-com.svg" },
-                    { name: "Deno", icon: "/icons/Deno_Logo_2024.svg" }
+                    { name: "Deno", icon: "/icons/Deno_Logo_2024.svg" },
                   ].map((tech: { name: string; icon: string }, index: number) => (
                     <div key={index} className="flex items-center gap-2">
                       <Image
