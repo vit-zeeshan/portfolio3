@@ -294,7 +294,7 @@ export default function Page() {
                     { name: "NPM", icon: "/icons/npm-svgrepo-com.svg" },
                     { name: "Hugo", icon: "/icons/hugo-svgrepo-com.svg" },
                     { name: "WordPress", icon: "/icons/wordpress-color-svgrepo-com.svg" },
-                    { name: "ReactNative", icon: "/icons/reactnative-svgrepo-com.svg" }
+                    { name: "Deno", icon: "/icons/Deno_Logo_2024.svg" }
                   ].map((tech: { name: string; icon: string }, index: number) => (
                     <div key={index} className="flex items-center gap-2">
                       <Image
