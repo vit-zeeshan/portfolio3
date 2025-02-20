@@ -291,7 +291,7 @@ export default function Page() {
                     { name: "React", icon: "/icons/react-svgrepo-com.svg" },
                     { name: "Next.js", icon: "/icons/nextjs-icon-svgrepo-com.svg" },
                     { name: "Tailwind", icon: "/icons/tailwind-svgrepo-com.svg" },
-                    { name: "GraphQL", icon: "/icons/graphql-svgrepo-com.svg" },
+                    { name: "NPM", icon: "/icons/npm-svgrepo-com.svg" },
                     { name: "Hugo", icon: "/icons/hugo-svgrepo-com.svg" },
                     { name: "WordPress", icon: "/icons/wordpress-color-svgrepo-com.svg" },
                     { name: "ReactNative", icon: "/icons/reactnative-svgrepo-com.svg" }
