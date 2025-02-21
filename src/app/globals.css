@@ -205,11 +205,11 @@ html {
 
 /* Card styles */
 .card-spotify {
-  @apply bg-card border border-border;
+  @apply bg-background border border-border;
   transition: all 0.3s ease;
 }
 
 .card-spotify:hover {
-  @apply bg-card/80;
+  @apply bg-background/80;
 }
 
