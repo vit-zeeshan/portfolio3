@@ -220,10 +220,8 @@ html {
 }
 
 .card-spotify:hover {
-  @apply bg-background/80;
+  @apply bg-background;
 }
-
-
 
 @layer base {
   * {
