@@ -7,14 +7,18 @@ import { MoonIcon, SunIcon } from "@radix-ui/react-icons"
 import { Sidebar } from "@/components/sidebar"
 
 export function Navbar() {
-  const { theme, setTheme } = useTheme()
+  const { theme, setTheme, resolvedTheme } = useTheme()
   const [mounted, setMounted] = React.useState(false)
   const [activeSection, setActiveSection] = React.useState("about")
 
   const sections = ["about", "skills", "projects", "experience", "education", "certifications"]
 
+  // Handle mounting separately from scroll effects
   React.useEffect(() => {
     setMounted(true)
+  }, [])
+
+  React.useEffect(() => {
     const handleScroll = () => {
       const current = sections.find(section => {
         const element = document.getElementById(section)
@@ -38,6 +42,7 @@ export function Navbar() {
     }
   }
 
+  // Early return with loading state
   if (!mounted) {
     return (
       <header className="sticky top-0 z-50 bg-background/30 dark:bg-background/50 backdrop-blur-xl border-b border-border/40">
@@ -62,6 +67,9 @@ export function Navbar() {
     )
   }
 
+  // Get the correct icon based on the resolved theme
+  const ThemeIcon = resolvedTheme === "dark" ? SunIcon : MoonIcon
+  
   return (
     <header className="sticky top-0 z-50 bg-background/30 dark:bg-background/50 backdrop-blur-xl border-b border-border/40">
       <nav className="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
@@ -88,14 +96,10 @@ export function Navbar() {
           </div>
         </div>
         <button
-          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
           className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-background/50 dark:hover:text-foreground dark:hover:bg-background/70 transition-colors"
         >
-          {theme === "dark" ? (
-            <SunIcon className="h-5 w-5" />
-          ) : (
-            <MoonIcon className="h-5 w-5" />
-          )}
+          <ThemeIcon className="h-5 w-5" />
         </button>
       </nav>
     </header>
