@@ -342,10 +342,10 @@ export default function Page() {
                     {[
                       { name: "Linux", icon: "/icons/linux-svgrepo-com(1).svg" },
                       { name: "Ubuntu", icon: "/icons/ubuntu-svgrepo-com.svg" },
-                      { name: "Fedora", icon: "/icons/fedora-svgrepo-com.svg" },
                       { name: "Arch", icon: "/icons/arch-linux-svgrepo-com.svg" },
                       { name: "Apple", icon: "/icons/apple-svgrepo-com.svg" },
                       { name: "Slack", icon: "/icons/slack-svgrepo-com.svg" },
+                      { name: "Cursor", icon: "/icons/cursor.svg" },
                       { name: "Vim", icon: "/icons/vim-svgrepo-com.svg" }
                     ].map((tech: { name: string; icon: string }, index: number) => (
                       <div key={index} className="flex items-center gap-2">
