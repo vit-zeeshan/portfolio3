@@ -147,13 +147,13 @@ export default function Page() {
   const handleContact = (platform: string) => {
     switch(platform) {
       case 'gmail':
-        window.location.href = 'mailto:fernand3zdev@gmail.com';
+        window.location.href = 'mailto:zeeshan.vit@gmail.com';
         break;
       case 'whatsapp':
-        window.location.href = 'https://wa.me/447479460160';
+        window.location.href = 'https://wa.me/919303483925';
         break;
       case 'linkedin':
-        window.location.href = 'https://www.linkedin.com/in/amoda-fernando';
+        window.location.href = 'https://www.linkedin.com/in/1zeeshanraza';
         break;
     }
   }
@@ -167,10 +167,10 @@ export default function Page() {
           {/* Hero Section */}
           <section id="about" className="mb-24 text-center">
             <h1 className="text-[42px] font-bold mb-4 gradient-text animate-fade-in">
-              Amoda Fernando
+              Zeeshan Raza
             </h1>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in delay-200">
-              Passionate developer with a knack for solving complex problems through code. Mostly self-taught and driven by an unyielding curiosity to explore and master new technologies.
+            DevOps & Back-End Developer from India. specializing in automation, scalability, and system optimization. I have experience with various programming languages and specifically DevOps. I am currently available to get hired.
             </p>
             <div className="flex items-center justify-center space-x-4">
               <DropdownMenu>
@@ -207,7 +207,7 @@ export default function Page() {
                 asChild
               >
                 <a
-                  href="https://github.com/fernand3z"
+                  href="https://github.com/zeeshanraza11"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub"
@@ -220,7 +220,7 @@ export default function Page() {
                 className="bg-success hover:bg-success/90 text-success-foreground animate-fade-in delay-300 hover-lift"
                 asChild
               >
-                <a href="https://blog.fernand3z.dev/" target="_blank" rel="noopener noreferrer">
+                <a href="https://rozgarhub.netlify.app" target="_blank" rel="noopener noreferrer">
                   My Blog Site
                 </a>
               </Button>
@@ -236,11 +236,11 @@ export default function Page() {
                 <div className="animate-slide-in delay-100">
                   <div className="space-y-2 md:space-y-4">
                     {[
-                      { name: "JavaScript", icon: "/icons/javascript-svgrepo-com.svg" },
-                      { name: "TypeScript", icon: "/icons/typescript-svgrepo-com.svg" },
-                      { name: "Python", icon: "/icons/python-svgrepo-com.svg" },
                       { name: "Java", icon: "/icons/java-svgrepo-com.svg" },
+                      { name: "Python", icon: "/icons/python-svgrepo-com.svg" },
+                      { name: "JavaScript", icon: "/icons/javascript-svgrepo-com.svg" },
                       { name: "C", icon: "/icons/c.svg" },
+                      // { name: "TypeScript", icon: "/icons/typescript-svgrepo-com.svg" },
                       { name: "HTML", icon: "/icons/html-5-svgrepo-com.svg" },
                       { name: "CSS", icon: "/icons/css-svgrepo-com.svg" }
                     ].map((tech: { name: string; icon: string }, index: number) => (
@@ -263,12 +263,12 @@ export default function Page() {
                   <div className="space-y-2 md:space-y-4">
                     {[
                       { name: "React", icon: "/icons/react-svgrepo-com.svg" },
-                      { name: "Next.js", icon: "/icons/nextjs-icon-svgrepo-com.svg" },
+                      // { name: "Next.js", icon: "/icons/nextjs-icon-svgrepo-com.svg" },
                       { name: "Tailwind", icon: "/icons/tailwind-svgrepo-com.svg" },
-                      { name: "NPM", icon: "/icons/npm-svgrepo-com.svg" },
-                      { name: "Hugo", icon: "/icons/hugo-svgrepo-com.svg" },
+                      // { name: "NPM", icon: "/icons/npm-svgrepo-com.svg" },
+                      // { name: "Hugo", icon: "/icons/hugo-svgrepo-com.svg" },
                       { name: "WordPress", icon: "/icons/wordpress-color-svgrepo-com.svg" },
-                      { name: "Deno", icon: "/icons/Deno_Logo_2024.svg" },
+                      // { name: "Deno", icon: "/icons/Deno_Logo_2024.svg" },
                     ].map((tech: { name: string; icon: string }, index: number) => (
                       <div key={index} className="flex items-center gap-2">
                         <Image
@@ -288,12 +288,12 @@ export default function Page() {
                 <div className="animate-slide-in delay-300">
                   <div className="space-y-2 md:space-y-4">
                     {[
-                      { name: "Node.js", icon: "/icons/node-svgrepo-com.svg" },
-                      { name: "Express", icon: "/icons/express-svgrepo-com.svg" },
+                      // { name: "Node.js", icon: "/icons/node-svgrepo-com.svg" },
+                      // { name: "Express", icon: "/icons/express-svgrepo-com.svg" },
                       { name: "PostgreSQL", icon: "/icons/postgresql-svgrepo-com.svg" },
                       { name: "MongoDB", icon: "/icons/mongodb-svgrepo-com.svg" },
-                      { name: "Firebase", icon: "/icons/firebase-svgrepo-com.svg" },
-                      { name: "PHP", icon: "/icons/php-1-logo-svgrepo-com.svg" },
+                      // { name: "Firebase", icon: "/icons/firebase-svgrepo-com.svg" },
+                      // { name: "PHP", icon: "/icons/php-1-logo-svgrepo-com.svg" },
                       { name: "SQL", icon: "/icons/sql-database-generic-svgrepo-com.svg" }
                     ].map((tech: { name: string; icon: string }, index: number) => (
                       <div key={index} className="flex items-center gap-2">
@@ -320,7 +320,7 @@ export default function Page() {
                       { name: "GitLab", icon: "/icons/gitlab-svgrepo-com.svg" },
                       { name: "AWS", icon: "/icons/aws-svgrepo-com.svg" },
                       { name: "Azure", icon: "/icons/azure-svgrepo-com.svg" },
-                      { name: "Nginx", icon: "/icons/nginx-svgrepo-com.svg" }
+                      // { name: "Nginx", icon: "/icons/nginx-svgrepo-com.svg" }
                     ].map((tech: { name: string; icon: string }, index: number) => (
                       <div key={index} className="flex items-center gap-2">
                         <Image
@@ -342,10 +342,10 @@ export default function Page() {
                     {[
                       { name: "Linux", icon: "/icons/linux-svgrepo-com(1).svg" },
                       { name: "Ubuntu", icon: "/icons/ubuntu-svgrepo-com.svg" },
-                      { name: "Arch", icon: "/icons/arch-linux-svgrepo-com.svg" },
-                      { name: "Apple", icon: "/icons/apple-svgrepo-com.svg" },
-                      { name: "Slack", icon: "/icons/slack-svgrepo-com.svg" },
-                      { name: "Cursor", icon: "/icons/cursor.svg" },
+                      // { name: "Arch", icon: "/icons/arch-linux-svgrepo-com.svg" },
+                      // { name: "Apple", icon: "/icons/apple-svgrepo-com.svg" },
+                      // { name: "Slack", icon: "/icons/slack-svgrepo-com.svg" },
+                      // { name: "Cursor", icon: "/icons/cursor.svg" },
                       { name: "Vim", icon: "/icons/vim-svgrepo-com.svg" }
                     ].map((tech: { name: string; icon: string }, index: number) => (
                       <div key={index} className="flex items-center gap-2">
@@ -371,7 +371,7 @@ export default function Page() {
                       { name: "Terminal", icon: "/icons/terminal-svgrepo-com.svg" },
                       { name: "PowerShell", icon: "/icons/powershell-svgrepo-com.svg" },
                       { name: "Bash", icon: "/icons/bash-icon-svgrepo-com.svg" },
-                      { name: "Notion", icon: "/icons/notion-logo-svgrepo-com.svg" },
+                      // { name: "Notion", icon: "/icons/notion-logo-svgrepo-com.svg" },
                       { name: "Figma", icon: "/icons/figma-svgrepo-com.svg" }
                     ].map((tech: { name: string; icon: string }, index: number) => (
                       <div key={index} className="flex items-center gap-2">
@@ -532,11 +532,11 @@ export default function Page() {
                         rel="noopener noreferrer"
                         className="hover:text-primary transition-colors"
                       >
-                        <CardTitle>NUMBER PLATE CLINIC</CardTitle>
+                        <CardTitle>VIT Infotech</CardTitle>
                       </a>
                       <CardDescription>
-                        <span className="block text-muted-foreground">Part-time · 2 yrs</span>
-                        <span className="block text-sm text-muted-foreground/60">Bolton, England, United Kingdom · Hybrid</span>
+                        <span className="block text-muted-foreground">Full-Time · 1 yrs</span>
+                        <span className="block text-sm text-muted-foreground/60">Bengaluru, Karnataka, India</span>
                       </CardDescription>
                     </div>
                   </div>
@@ -544,8 +544,8 @@ export default function Page() {
                 <CardContent>
                   {/* System Administrator Role */}
                   <div className="mt-2">
-                    <h4 className="text-lg font-semibold text-foreground">System Administrator</h4>
-                    <p className="text-sm text-muted-foreground/60 mb-4">Feb 2024 - Present · 1 yr</p>
+                    <h4 className="text-lg font-semibold text-foreground">DevOps Engineer</h4>
+                    <p className="text-sm text-muted-foreground/60 mb-4">Oct 2024 - Present · 1 yr</p>
                     <p className="text-muted-foreground mb-4 text-[0.75em]">
                       Leading IT infrastructure management and optimization at NUMBER PLATE CLINIC, focusing on system reliability, security, and automation. Responsible for implementing AI-driven solutions, maintaining cybersecurity standards, and ensuring seamless operations across all IT systems.
                     </p>
@@ -787,11 +787,11 @@ export default function Page() {
                         rel="noopener noreferrer"
                         className="hover:text-primary transition-colors"
                       >
-                        <CardTitle>Associate's degree: Computer Science</CardTitle>
+                        <CardTitle>Bachelor of Technology : Computer Science</CardTitle>
                       </a>
                       <CardDescription>
-                        <span className="block text-muted-foreground">Vocational Training Authority</span>
-                        <span className="block text-sm text-muted-foreground/60">Jan 2020 - Jan 2022</span>
+                        <span className="block text-muted-foreground">Rajiv Gandhi Proudyogiki Vishwavidyalaya</span>
+                        <span className="block text-sm text-muted-foreground/60">Jun 2020 - Jun 2024</span>
                       </CardDescription>
                     </div>
                   </div>
