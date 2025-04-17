@@ -26,10 +26,10 @@ export default function Page() {
 
   const projects = [
     {
-      title: "Dev Toolbox",
-      description: "A collection of development tools and utilities",
-      content: "A comprehensive collection of development tools and utilities to streamline the development workflow",
-      link: "https://github.com/fernand3z/dev-toolbox",
+      title: "Rozgar Hub",
+      description: "A collection Jobs, job listing websites",
+      content: "A comprehensive collection of job, internship to streamline the Careers",
+      // link: "https://github.com/fernand3z/dev-toolbox",
       technologies: [
         { name: "Python", icon: "/icons/python-svgrepo-com.svg" },
         { name: "Prettier", icon: "/icons/prettier-svgrepo-com.svg" },
@@ -40,10 +40,10 @@ export default function Page() {
       ]
     },
     {
-      title: "Update Script",
-      description: "A script for automating system updates and maintenance tasks",
-      content: "Streamlines the process of keeping your system up-to-date with automated checks and updates",
-      link: "https://github.com/fernand3z/update-script",
+      title: "Amplify",
+      description: "music streaming web",
+      content: "Streamlines the process of keeping your system up-to-date with latest music",
+      // link: "https://github.com/fernand3z/update-script",
       technologies: [
         { name: "Bash", icon: "/icons/bash-icon-svgrepo-com.svg" },
         { name: "Linux", icon: "/icons/linux-svgrepo-com(1).svg" },
@@ -51,56 +51,56 @@ export default function Page() {
         { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" }
       ]
     },
-    {
-      title: "Portfolio Website",
-      description: "Modern portfolio website built with Next.js and Tailwind CSS",
-      content: "A responsive and animated portfolio showcasing my projects and skills",
-      link: "https://github.com/fernand3z/portfolio",
-      technologies: [
-        { name: "Next.js", icon: "/icons/nextjs-icon-svgrepo-com.svg" },
-        { name: "React", icon: "/icons/react-svgrepo-com.svg" },
-        { name: "TypeScript", icon: "/icons/typescript-svgrepo-com.svg" },
-        { name: "Tailwind", icon: "/icons/tailwind-svgrepo-com.svg" },
-        { name: "NPM", icon: "/icons/npm.svg" },
-        { name: "Prettier", icon: "/icons/prettier-svgrepo-com.svg" },
-        { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
-        { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" }
-      ]
-    },
-    {
-      title: "Personal Blog Site",
-      description: "A modern blog site built with Hugo static site generator",
-      content: "Fast and minimalist blog featuring custom themes, responsive design, and markdown support",
-      link: "https://github.com/fernand3z/my-blog-site",
-      technologies: [
-        { name: "Hugo", icon: "/icons/hugo-svgrepo-com.svg" },
-        { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
-        { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" }
-      ]
-    },
-    {
-      title: "ytmusic Downloader",
-      description: "Python script for downloading music from YTmusic using the yt-dlp library",
-      content: "A simple Python script to download audio from YouTube videos",
-      link: "https://github.com/fernand3z/yt-music-downloader",
-      technologies: [
-        { name: "Python", icon: "/icons/python-svgrepo-com.svg" },
-        { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
-        { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" }
-      ]
-    },
-    {
-      title: "Devlogz Blog App",
-      description: "A React Native mobile app for my personal blog",
-      content: "Cross-platform mobile application built with React Native that provides a native app experience for my blog site with offline capabilities and push notifications",
-      link: "https://github.com/fernand3z/my-webview-app",
-      technologies: [
-        { name: "React Native", icon: "/icons/reactnative-svgrepo-com.svg" },
-        { name: "JavaScript", icon: "/icons/javascript-svgrepo-com.svg" },
-        { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
-        { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" }
-      ]
-    },
+    // {
+    //   title: "Portfolio Website",
+    //   description: "Modern portfolio website built with Next.js and Tailwind CSS",
+    //   content: "A responsive and animated portfolio showcasing my projects and skills",
+    //   link: "https://github.com/fernand3z/portfolio",
+    //   technologies: [
+    //     { name: "Next.js", icon: "/icons/nextjs-icon-svgrepo-com.svg" },
+    //     { name: "React", icon: "/icons/react-svgrepo-com.svg" },
+    //     { name: "TypeScript", icon: "/icons/typescript-svgrepo-com.svg" },
+    //     { name: "Tailwind", icon: "/icons/tailwind-svgrepo-com.svg" },
+    //     { name: "NPM", icon: "/icons/npm.svg" },
+    //     { name: "Prettier", icon: "/icons/prettier-svgrepo-com.svg" },
+    //     { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
+    //     { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" }
+    //   ]
+    // },
+    // {
+    //   title: "Personal Blog Site",
+    //   description: "A modern blog site built with Hugo static site generator",
+    //   content: "Fast and minimalist blog featuring custom themes, responsive design, and markdown support",
+    //   link: "https://github.com/fernand3z/my-blog-site",
+    //   technologies: [
+    //     { name: "Hugo", icon: "/icons/hugo-svgrepo-com.svg" },
+    //     { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
+    //     { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" }
+    //   ]
+    // },
+    // {
+    //   title: "ytmusic Downloader",
+    //   description: "Python script for downloading music from YTmusic using the yt-dlp library",
+    //   content: "A simple Python script to download audio from YouTube videos",
+    //   link: "https://github.com/fernand3z/yt-music-downloader",
+    //   technologies: [
+    //     { name: "Python", icon: "/icons/python-svgrepo-com.svg" },
+    //     { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
+    //     { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" }
+    //   ]
+    // },
+    // {
+    //   title: "Devlogz Blog App",
+    //   description: "A React Native mobile app for my personal blog",
+    //   content: "Cross-platform mobile application built with React Native that provides a native app experience for my blog site with offline capabilities and push notifications",
+    //   link: "https://github.com/fernand3z/my-webview-app",
+    //   technologies: [
+    //     { name: "React Native", icon: "/icons/reactnative-svgrepo-com.svg" },
+    //     { name: "JavaScript", icon: "/icons/javascript-svgrepo-com.svg" },
+    //     { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
+    //     { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" }
+    //   ]
+    // },
     {
       title: "Coming Soon",
       description: "Future project planned",
@@ -288,8 +288,8 @@ export default function Page() {
                 <div className="animate-slide-in delay-300">
                   <div className="space-y-2 md:space-y-4">
                     {[
-                      // { name: "Node.js", icon: "/icons/node-svgrepo-com.svg" },
-                      // { name: "Express", icon: "/icons/express-svgrepo-com.svg" },
+                      { name: "MySQL", icon: "/icons/node-svgrepo-com.png" },
+                      { name: "SpringBoot", icon: "/icons/spring-boot.svg" },
                       { name: "PostgreSQL", icon: "/icons/postgresql-svgrepo-com.svg" },
                       { name: "MongoDB", icon: "/icons/mongodb-svgrepo-com.svg" },
                       // { name: "Firebase", icon: "/icons/firebase-svgrepo-com.svg" },
@@ -318,9 +318,10 @@ export default function Page() {
                       { name: "Git", icon: "/icons/git-svgrepo-com.svg" },
                       { name: "GitHub", icon: "/icons/github-svgrepo-com.svg" },
                       { name: "GitLab", icon: "/icons/gitlab-svgrepo-com.svg" },
+                      { name: "Ansible", icon: "/icons/ansible.svg" },
                       { name: "AWS", icon: "/icons/aws-svgrepo-com.svg" },
-                      { name: "Azure", icon: "/icons/azure-svgrepo-com.svg" },
-                      // { name: "Nginx", icon: "/icons/nginx-svgrepo-com.svg" }
+                      { name: "Oracle", icon: "/icons/oracle-icon.svg" },
+                      { name: "Kubernetes", icon: "/icons/kubernetes-icon.svg" }
                     ].map((tech: { name: string; icon: string }, index: number) => (
                       <div key={index} className="flex items-center gap-2">
                         <Image
@@ -342,7 +343,7 @@ export default function Page() {
                     {[
                       { name: "Linux", icon: "/icons/linux-svgrepo-com(1).svg" },
                       { name: "Ubuntu", icon: "/icons/ubuntu-svgrepo-com.svg" },
-                      // { name: "Arch", icon: "/icons/arch-linux-svgrepo-com.svg" },
+                      { name: "Windows", icon: "/icons/windows-10-icon.svg" },
                       // { name: "Apple", icon: "/icons/apple-svgrepo-com.svg" },
                       // { name: "Slack", icon: "/icons/slack-svgrepo-com.svg" },
                       // { name: "Cursor", icon: "/icons/cursor.svg" },
@@ -371,7 +372,7 @@ export default function Page() {
                       { name: "Terminal", icon: "/icons/terminal-svgrepo-com.svg" },
                       { name: "PowerShell", icon: "/icons/powershell-svgrepo-com.svg" },
                       { name: "Bash", icon: "/icons/bash-icon-svgrepo-com.svg" },
-                      // { name: "Notion", icon: "/icons/notion-logo-svgrepo-com.svg" },
+                      { name: "Eclipse", icon: "/icons/eclipse.svg" },
                       { name: "Figma", icon: "/icons/figma-svgrepo-com.svg" }
                     ].map((tech: { name: string; icon: string }, index: number) => (
                       <div key={index} className="flex items-center gap-2">
@@ -511,7 +512,7 @@ export default function Page() {
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 bg-card">
                       <a 
-                        href="https://www.linkedin.com/company/number-plate-clinic/" 
+                        href="https://www.google.com/imgres?q=vit%20infotech%20logo&imgurl=https%3A%2F%2Fcdn.techimply.com%2Fuploads%2Fcompany%2F98%2Flogo%2FVyshnavi%2520Information%2520Technologies.jpg&imgrefurl=https%3A%2F%2Fwww.techimply.com%2Fprofile%2Fvyshnavi-information-technologies-india-pvt-ltd&docid=ixIxmZxLFToy-M&tbnid=uSFCqslgcXFCmM&vet=12ahUKEwjq5LHnsN6MAxVgcGwGHWbFFvoQM3oECEgQAA..i&w=115&h=115&hcb=2&ved=2ahUKEwjq5LHnsN6MAxVgcGwGHWbFFvoQM3oECEgQAA" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="cursor-pointer transition-opacity hover:opacity-80"
@@ -527,7 +528,7 @@ export default function Page() {
                     </div>
                     <div className="flex-grow">
                       <a 
-                        href="https://www.linkedin.com/company/number-plate-clinic/" 
+                        href="https://www.linkedin.com/in/1zeeshanraza/" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="hover:text-primary transition-colors"
@@ -547,7 +548,7 @@ export default function Page() {
                     <h4 className="text-lg font-semibold text-foreground">DevOps Engineer</h4>
                     <p className="text-sm text-muted-foreground/60 mb-4">Oct 2024 - Present · 1 yr</p>
                     <p className="text-muted-foreground mb-4 text-[0.75em]">
-                      Leading IT infrastructure management and optimization at NUMBER PLATE CLINIC, focusing on system reliability, security, and automation. Responsible for implementing AI-driven solutions, maintaining cybersecurity standards, and ensuring seamless operations across all IT systems.
+                    Leading DevOps engineering at VIT Infotech, focusing on infrastructure automation, system reliability, and continuous integration/deployment. Responsible for streamlining IT operations, maintaining seamless system performance, and supporting scalable development workflows.
                     </p>
                     <div className="flex flex-wrap gap-2">
                       {[
@@ -582,10 +583,10 @@ export default function Page() {
 
                   {/* Assistant System Administrator Role */}
                   <div className="mt-8 border-t border-border pt-6">
-                    <h4 className="text-lg font-semibold text-foreground">Assistant System Administrator</h4>
-                    <p className="text-sm text-muted-foreground/60 mb-4">Feb 2023 - 2024 · 1 yr</p>
+                    <h4 className="text-lg font-semibold text-foreground">SWE Intern at VIT Infotech</h4>
+                    <p className="text-sm text-muted-foreground/60 mb-4">Oct 2024 - Mar 2025 · 6 Month</p>
                     <p className="text-muted-foreground mb-4 text-[0.75em]">
-                      Supported core IT infrastructure operations and maintenance, with a focus on system reliability and security. Utilized automation tools and best practices to optimize workflows and maintain system integrity while assisting in implementing comprehensive IT solutions.
+                    Worked as a DevOps Intern at VIT Infotech, assisting in automating infrastructure, monitoring system performance, and supporting CI/CD pipelines. Gained hands-on experience with deployment tools, cloud environments, and collaborative development workflows.
                     </p>
                     <div className="flex flex-wrap gap-2">
                       {[
@@ -618,7 +619,7 @@ export default function Page() {
               </Card>
 
               {/* Freelance WordPress Developer Experience */}
-              <Card className="hover-lift">
+              {/* <Card className="hover-lift">
                 <CardHeader className="pb-4">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 bg-card">
@@ -676,10 +677,10 @@ export default function Page() {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
+              </Card> */}
 
               {/* Adventa Technologies Experience */}
-              <Card className="hover-lift">
+              {/* <Card className="hover-lift">
                 <CardHeader className="pb-4">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 bg-card">
@@ -752,7 +753,7 @@ export default function Page() {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
+              </Card> */}
             </div>
           </section>
 
@@ -799,7 +800,7 @@ export default function Page() {
               </Card>
 
               {/* Master's Degree */}
-              <Card className="hover-lift">
+              {/* <Card className="hover-lift">
                 <CardHeader className="pb-4">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 bg-card">
@@ -834,10 +835,10 @@ export default function Page() {
                     </div>
                   </div>
                 </CardHeader>
-              </Card>
+              </Card> */}
 
               {/* CS50 Course */}
-              <Card className="hover-lift">
+              {/* <Card className="hover-lift">
                 <CardHeader className="pb-4">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 bg-card">
@@ -875,10 +876,10 @@ export default function Page() {
                     </div>
                   </div>
                 </CardHeader>
-              </Card>
+              </Card> */}
 
               {/* freeCodeCamp */}
-              <Card className="hover-lift">
+              {/* <Card className="hover-lift">
                 <CardHeader className="pb-4">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 bg-card">
@@ -916,7 +917,7 @@ export default function Page() {
                     </div>
                   </div>
                 </CardHeader>
-              </Card>
+              </Card> */}
             </div>
           </section>
 
